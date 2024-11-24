@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ugT8VhBPj5s=",
+  "success": true,
+  "projectFilePath": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\Model\\Model.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NGUYEN VAN HIEU\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\NGUYEN VAN HIEU\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\NGUYEN VAN HIEU\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,965 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\api\\controllers\\vouchercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|solutionrelative:api\\controllers\\vouchercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|solutionrelative:api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\api\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|solutionrelative:api\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|solutionrelative:api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|solutionrelative:api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\interfaces\\iadvertisementdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\iadvertisementdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\orderdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\orderdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\api\\controllers\\billcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|solutionrelative:api\\controllers\\billcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\api\\controllers\\importbillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|solutionrelative:api\\controllers\\importbillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\importbilldal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\importbilldal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|solutionrelative:api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\newsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\newsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\newsbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\newsbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\interfaces\\inewsbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\interfaces\\inewsbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\api\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|solutionrelative:api\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\api\\controllers\\advertisementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|solutionrelative:api\\controllers\\advertisementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\advertisementdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\advertisementdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\staffbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\staffbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\staffdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\staffdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\usersbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\usersbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\usersdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\usersdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\ordersbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\ordersbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\productbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\productbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\productdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\productdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\interfaces\\iordersbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\interfaces\\iordersbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\categorybll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\categorybll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\categorydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\categorydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\advertisementbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\advertisementbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\voucherdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\voucherdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\supplierdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\supplierdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\interfaces\\ivoucherdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\ivoucherdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\interfaces\\iusersdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\iusersdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\interfaces\\isupplierdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\isupplierdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\interfaces\\istaffdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\istaffdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\interfaces\\iproductdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\iproductdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\interfaces\\iorderdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\iorderdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\interfaces\\inewsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\inewsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\interfaces\\iimportbilldal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\iimportbilldal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\interfaces\\icategorydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\icategorydal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\interfaces\\iadvertisementbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\interfaces\\iadvertisementbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|solutionrelative:api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\api\\controllers\\suppliercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB2A57CB-E006-4E77-970A-D2CBE66093CC}|API\\API.csproj|solutionrelative:api\\controllers\\suppliercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\voucherbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\voucherbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\supplierbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\supplierbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\importbillbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\importbillbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\interfaces\\icategorybll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\interfaces\\icategorybll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\interfaces\\iimportbillbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\interfaces\\iimportbillbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\interfaces\\iproductbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\interfaces\\iproductbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\interfaces\\istaffbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\interfaces\\istaffbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\interfaces\\iusersbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\interfaces\\iusersbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\interfaces\\isupplierbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\interfaces\\isupplierbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\interfaces\\ivoucherbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\interfaces\\ivoucherbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\interfaces\\iaccountbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\interfaces\\iaccountbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\bll\\accountbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2974C9AD-ED45-49EF-8057-9D18894D590D}|BLL\\BLL.csproj|solutionrelative:bll\\accountbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\accountdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\accountdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\admin project\\dal\\interfaces\\iaccountdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B34511A-CB36-415C-A154-192BF13BE808}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\iaccountdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 210,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 51,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\appsettings.json",
+              "RelativeDocumentMoniker": "API\\appsettings.json",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\appsettings.json",
+              "RelativeToolTip": "API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-20T13:48:46.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Startup.cs",
+              "RelativeDocumentMoniker": "API\\Startup.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Startup.cs",
+              "RelativeToolTip": "API\\Startup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T08:42:57.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "StaffDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\StaffDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\StaffDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\StaffDAL.cs",
+              "RelativeToolTip": "DAL\\StaffDAL.cs",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAiwKgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:55:17.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProductDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\ProductDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\ProductDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\ProductDAL.cs",
+              "RelativeToolTip": "DAL\\ProductDAL.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAiwKMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:55:08.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\OrderDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\OrderDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\OrderDAL.cs",
+              "RelativeToolTip": "DAL\\OrderDAL.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAewKUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:55:00.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NewsDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\NewsDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\NewsDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\NewsDAL.cs",
+              "RelativeToolTip": "DAL\\NewsDAL.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAQwKAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:54:54.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ImportBillDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\ImportBillDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\ImportBillDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\ImportBillDAL.cs",
+              "RelativeToolTip": "DAL\\ImportBillDAL.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAQwGYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:54:51.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IVoucherDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\IVoucherDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IVoucherDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\IVoucherDAL.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IVoucherDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:54:34.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IUsersDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\IUsersDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IUsersDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\IUsersDAL.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IUsersDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:54:20.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ISupplierDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\ISupplierDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\ISupplierDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\ISupplierDAL.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\ISupplierDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:54:19.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IStaffDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\IStaffDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IStaffDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\IStaffDAL.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IStaffDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:54:07.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IProductDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\IProductDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IProductDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\IProductDAL.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IProductDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:53:51.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IOrderDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\IOrderDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IOrderDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\IOrderDAL.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IOrderDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:53:28.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "INewsDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\INewsDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\INewsDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\INewsDAL.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\INewsDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:53:17.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IImportBillDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\IImportBillDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IImportBillDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\IImportBillDAL.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IImportBillDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:53:16.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ICategoryDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\ICategoryDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\ICategoryDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\ICategoryDAL.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\ICategoryDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:52:52.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AdvertisementDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\AdvertisementDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\AdvertisementDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\AdvertisementDAL.cs",
+              "RelativeToolTip": "DAL\\AdvertisementDAL.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAwEgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:52:43.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAdvertisementDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\IAdvertisementDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IAdvertisementDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\IAdvertisementDAL.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IAdvertisementDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:52:30.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "SupplierBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\SupplierBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\SupplierBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\SupplierBLL.cs",
+              "RelativeToolTip": "BLL\\SupplierBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:45:29.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProductBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\ProductBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\ProductBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\ProductBLL.cs",
+              "RelativeToolTip": "BLL\\ProductBLL.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDYAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:45:15.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OrdersBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\OrdersBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\OrdersBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\OrdersBLL.cs",
+              "RelativeToolTip": "BLL\\OrdersBLL.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwDIAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:45:07.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NewsBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\NewsBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\NewsBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\NewsBLL.cs",
+              "RelativeToolTip": "BLL\\NewsBLL.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwDcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:45:01.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ImportBillBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\ImportBillBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\ImportBillBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\ImportBillBLL.cs",
+              "RelativeToolTip": "BLL\\ImportBillBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:44:59.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CategoryBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\CategoryBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\CategoryBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\CategoryBLL.cs",
+              "RelativeToolTip": "BLL\\CategoryBLL.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAA7wDoAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:44:40.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ICategoryBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\ICategoryBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\Interfaces\\ICategoryBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\ICategoryBLL.cs",
+              "RelativeToolTip": "BLL\\Interfaces\\ICategoryBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:43:43.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "IImportBillBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\IImportBillBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\Interfaces\\IImportBillBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\IImportBillBLL.cs",
+              "RelativeToolTip": "BLL\\Interfaces\\IImportBillBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:43:39.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "INewsBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\INewsBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\Interfaces\\INewsBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\INewsBLL.cs",
+              "RelativeToolTip": "BLL\\Interfaces\\INewsBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:43:16.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IOrdersBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\IOrdersBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\Interfaces\\IOrdersBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\IOrdersBLL.cs",
+              "RelativeToolTip": "BLL\\Interfaces\\IOrdersBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:42:49.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "IProductBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\IProductBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\Interfaces\\IProductBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\IProductBLL.cs",
+              "RelativeToolTip": "BLL\\Interfaces\\IProductBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:42:25.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ISupplierBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\ISupplierBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\Interfaces\\ISupplierBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\ISupplierBLL.cs",
+              "RelativeToolTip": "BLL\\Interfaces\\ISupplierBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:41:55.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "IVoucherBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\IVoucherBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\Interfaces\\IVoucherBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\IVoucherBLL.cs",
+              "RelativeToolTip": "BLL\\Interfaces\\IVoucherBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:40:36.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IAdvertisementBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\IAdvertisementBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\Interfaces\\IAdvertisementBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\IAdvertisementBLL.cs",
+              "RelativeToolTip": "BLL\\Interfaces\\IAdvertisementBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:40:23.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CategoryDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\CategoryDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\CategoryDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\CategoryDAL.cs",
+              "RelativeToolTip": "DAL\\CategoryDAL.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAiwJ8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T02:19:10.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "VoucherDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\VoucherDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\VoucherDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\VoucherDAL.cs",
+              "RelativeToolTip": "DAL\\VoucherDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T02:03:17.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "IAccountBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\IAccountBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\Interfaces\\IAccountBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\IAccountBLL.cs",
+              "RelativeToolTip": "BLL\\Interfaces\\IAccountBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T14:09:58.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "VoucherBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\VoucherBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\VoucherBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\VoucherBLL.cs",
+              "RelativeToolTip": "BLL\\VoucherBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T14:06:21.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "AccountBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\AccountBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\AccountBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\AccountBLL.cs",
+              "RelativeToolTip": "BLL\\AccountBLL.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T13:59:09.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AdvertisementBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\AdvertisementBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\AdvertisementBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\AdvertisementBLL.cs",
+              "RelativeToolTip": "BLL\\AdvertisementBLL.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAqwDYAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T13:58:48.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "SupplierController.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\SupplierController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\SupplierController.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\SupplierController.cs",
+              "RelativeToolTip": "API\\Controllers\\SupplierController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAA3wEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T13:38:51.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "API\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAgwIAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T13:38:50.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ImportBillController.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\ImportBillController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\ImportBillController.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\ImportBillController.cs",
+              "RelativeToolTip": "API\\Controllers\\ImportBillController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowEsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T13:38:49.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BillController.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\BillController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\BillController.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\BillController.cs",
+              "RelativeToolTip": "API\\Controllers\\BillController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowDwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T13:38:47.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NewsController.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\NewsController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\NewsController.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\NewsController.cs",
+              "RelativeToolTip": "API\\Controllers\\NewsController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAUwEcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T09:19:09.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SupplierDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\SupplierDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\SupplierDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\SupplierDAL.cs",
+              "RelativeToolTip": "DAL\\SupplierDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T07:40:45.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "API\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T03:43:03.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "API\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T03:32:42.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VoucherController.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\VoucherController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\VoucherController.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\VoucherController.cs",
+              "RelativeToolTip": "API\\Controllers\\VoucherController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T14:08:34.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AdvertisementController.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\AdvertisementController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AdvertisementController.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\AdvertisementController.cs",
+              "RelativeToolTip": "API\\Controllers\\AdvertisementController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T13:49:37.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "IAccountDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\IAccountDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IAccountDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\Interfaces\\IAccountDAL.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IAccountDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T07:58:42.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "AccountDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\AccountDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\AccountDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\AccountDAL.cs",
+              "RelativeToolTip": "DAL\\AccountDAL.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwCUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T07:57:11.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UsersDAL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\UsersDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\UsersDAL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\DAL\\UsersDAL.cs",
+              "RelativeToolTip": "DAL\\UsersDAL.cs",
+              "ViewState": "AgIAAKAAAAAAAAAAAAA4wLoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T14:44:07.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "IUsersBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\IUsersBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\Interfaces\\IUsersBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\IUsersBLL.cs",
+              "RelativeToolTip": "BLL\\Interfaces\\IUsersBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T13:05:44.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UsersBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\UsersBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\UsersBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\UsersBLL.cs",
+              "RelativeToolTip": "BLL\\UsersBLL.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAcwHcAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T12:57:33.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "StaffBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\StaffBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\StaffBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\StaffBLL.cs",
+              "RelativeToolTip": "BLL\\StaffBLL.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAWwHQAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T12:57:16.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "IStaffBLL.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\IStaffBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\Interfaces\\IStaffBLL.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\BLL\\Interfaces\\IStaffBLL.cs",
+              "RelativeToolTip": "BLL\\Interfaces\\IStaffBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T12:57:09.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "API\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAwwL0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T12:57:06.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StaffController.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\StaffController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\StaffController.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Admin Project\\API\\Controllers\\StaffController.cs",
+              "RelativeToolTip": "API\\Controllers\\StaffController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAgwC8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T12:57:05.626Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

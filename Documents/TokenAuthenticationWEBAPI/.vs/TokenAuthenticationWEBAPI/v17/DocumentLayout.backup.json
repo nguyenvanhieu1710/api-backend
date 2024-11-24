@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Documents Of Year 3\\Service-oriented Software Development\\TokenAuthenticationWEBAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{991C5A43-B9AB-430F-BC3B-489070584A97}|TokenAuthenticationWEBAPI\\TokenAuthenticationWEBAPI.csproj|D:\\Documents Of Year 3\\Service-oriented Software Development\\TokenAuthenticationWEBAPI\\tokenauthenticationwebapi\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{991C5A43-B9AB-430F-BC3B-489070584A97}|TokenAuthenticationWEBAPI\\TokenAuthenticationWEBAPI.csproj|solutionrelative:tokenauthenticationwebapi\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{991C5A43-B9AB-430F-BC3B-489070584A97}|TokenAuthenticationWEBAPI\\TokenAuthenticationWEBAPI.csproj|D:\\Documents Of Year 3\\Service-oriented Software Development\\TokenAuthenticationWEBAPI\\tokenauthenticationwebapi\\models\\myauthorizationserverprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{991C5A43-B9AB-430F-BC3B-489070584A97}|TokenAuthenticationWEBAPI\\TokenAuthenticationWEBAPI.csproj|solutionrelative:tokenauthenticationwebapi\\models\\myauthorizationserverprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{991C5A43-B9AB-430F-BC3B-489070584A97}|TokenAuthenticationWEBAPI\\TokenAuthenticationWEBAPI.csproj|D:\\Documents Of Year 3\\Service-oriented Software Development\\TokenAuthenticationWEBAPI\\tokenauthenticationwebapi\\models\\usermasterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{991C5A43-B9AB-430F-BC3B-489070584A97}|TokenAuthenticationWEBAPI\\TokenAuthenticationWEBAPI.csproj|solutionrelative:tokenauthenticationwebapi\\models\\usermasterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{991C5A43-B9AB-430F-BC3B-489070584A97}|TokenAuthenticationWEBAPI\\TokenAuthenticationWEBAPI.csproj|d:\\documents of year 3\\service-oriented software development\\tokenauthenticationwebapi\\tokenauthenticationwebapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{991C5A43-B9AB-430F-BC3B-489070584A97}|TokenAuthenticationWEBAPI\\TokenAuthenticationWEBAPI.csproj|solutionrelative:tokenauthenticationwebapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\TokenAuthenticationWEBAPI\\TokenAuthenticationWEBAPI\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "TokenAuthenticationWEBAPI\\Controllers\\TestController.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\TokenAuthenticationWEBAPI\\TokenAuthenticationWEBAPI\\Controllers\\TestController.cs",
+              "RelativeToolTip": "TokenAuthenticationWEBAPI\\Controllers\\TestController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T07:37:49.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\TokenAuthenticationWEBAPI\\TokenAuthenticationWEBAPI\\Startup.cs",
+              "RelativeDocumentMoniker": "TokenAuthenticationWEBAPI\\Startup.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\TokenAuthenticationWEBAPI\\TokenAuthenticationWEBAPI\\Startup.cs",
+              "RelativeToolTip": "TokenAuthenticationWEBAPI\\Startup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T07:34:31.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyAuthorizationServerProvider.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\TokenAuthenticationWEBAPI\\TokenAuthenticationWEBAPI\\Models\\MyAuthorizationServerProvider.cs",
+              "RelativeDocumentMoniker": "TokenAuthenticationWEBAPI\\Models\\MyAuthorizationServerProvider.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\TokenAuthenticationWEBAPI\\TokenAuthenticationWEBAPI\\Models\\MyAuthorizationServerProvider.cs",
+              "RelativeToolTip": "TokenAuthenticationWEBAPI\\Models\\MyAuthorizationServerProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T07:31:07.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserMasterRepository.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\TokenAuthenticationWEBAPI\\TokenAuthenticationWEBAPI\\Models\\UserMasterRepository.cs",
+              "RelativeDocumentMoniker": "TokenAuthenticationWEBAPI\\Models\\UserMasterRepository.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\TokenAuthenticationWEBAPI\\TokenAuthenticationWEBAPI\\Models\\UserMasterRepository.cs",
+              "RelativeToolTip": "TokenAuthenticationWEBAPI\\Models\\UserMasterRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T03:39:55.669Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\Gateway Project.csproj.AssemblyReference.cache
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\Gateway Project.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\Gateway Project.AssemblyInfoInputs.cache
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\Gateway Project.AssemblyInfo.cs
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\Gateway Project.csproj.CoreCompileInputs.cache
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\Gateway Project.MvcApplicationPartsAssemblyInfo.cs
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\Gateway Project.MvcApplicationPartsAssemblyInfo.cache
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\appsettings.Development.json
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\appsettings.json
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\ocelot.json
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Gateway Project.exe
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Gateway Project.deps.json
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Gateway Project.runtimeconfig.json
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Gateway Project.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Gateway Project.pdb
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\FluentValidation.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Microsoft.Extensions.DiagnosticAdapter.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Ocelot.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\staticwebassets.build.json
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\staticwebassets.development.json
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\staticwebassets\msbuild.Gateway Project.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\staticwebassets\msbuild.build.Gateway Project.props
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Gateway Project.props
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Gateway Project.props
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\scopedcss\bundle\Gateway Project.styles.css
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\Gateway .0618B5DA.Up2Date
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\Gateway Project.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\refint\Gateway Project.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\Gateway Project.pdb
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\Gateway Project.genruntimeconfig.cache
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\ref\Gateway Project.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\System.Data.SqlClient.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

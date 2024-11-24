@@ -1,0 +1,75 @@
+﻿using DAL.Helper.Interfaces;
+using DAL.Interfaces;
+using Model;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DAL
+{
+    public class CategoryDAL : ICategoryDAL
+    {
+        private IDatabaseHelper _IDatabaseHelper;
+        public CategoryDAL(IDatabaseHelper databaseHelper)
+        {
+            _IDatabaseHelper = databaseHelper;
+        }
+
+        public List<CategoryModel> GetAll()
+        {
+            string msgError = "";
+            try
+            {
+                var result = _IDatabaseHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_category_all");
+                if (!string.IsNullOrEmpty(msgError))
+                {
+                    throw new Exception(msgError);
+                }
+                return result.ConvertTo<CategoryModel>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public CategoryModel GetDataById(int id)
+        {
+            string msgError = "";
+            try
+            {
+                var result = _IDatabaseHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_category_get_data_by_id",
+                    "@category_Id", id);
+                if (!string.IsNullOrEmpty(msgError))
+                {
+                    throw new Exception(msgError);
+                }
+                return result.ConvertTo<CategoryModel>().FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }        
+
+        public List<CategoryModel> Search(string name)
+        {
+            string msgError = "";
+            try
+            {
+                var result = _IDatabaseHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_category_search",
+                    "@category_Name", name);
+                if (result != null && !string.IsNullOrEmpty(result.ToString()))
+                {
+                    throw new Exception(result.ToString());
+                }
+                return result.ConvertTo<CategoryModel>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+    }
+}

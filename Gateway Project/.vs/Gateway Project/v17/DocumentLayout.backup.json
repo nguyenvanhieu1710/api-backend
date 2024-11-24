@@ -1,0 +1,227 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|d:\\documents of year 3\\service-oriented software development\\gateway project\\gateway project\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|solutionrelative:gateway project\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|d:\\documents of year 3\\service-oriented software development\\gateway project\\gateway project\\jwtmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|solutionrelative:gateway project\\jwtmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|d:\\documents of year 3\\service-oriented software development\\gateway project\\gateway project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|solutionrelative:gateway project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|d:\\documents of year 3\\service-oriented software development\\gateway project\\gateway project\\database\\helper\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|solutionrelative:gateway project\\database\\helper\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|d:\\documents of year 3\\service-oriented software development\\gateway project\\gateway project\\database\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|solutionrelative:gateway project\\database\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|d:\\documents of year 3\\service-oriented software development\\gateway project\\gateway project\\database\\helper\\interfaces\\idatabasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|solutionrelative:gateway project\\database\\helper\\interfaces\\idatabasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|d:\\documents of year 3\\service-oriented software development\\gateway project\\gateway project\\database\\helper\\collectionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|solutionrelative:gateway project\\database\\helper\\collectionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|d:\\documents of year 3\\service-oriented software development\\gateway project\\gateway project\\database\\helper\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|solutionrelative:gateway project\\database\\helper\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|d:\\documents of year 3\\service-oriented software development\\gateway project\\gateway project\\database\\interfaces\\iaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|solutionrelative:gateway project\\database\\interfaces\\iaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|d:\\documents of year 3\\service-oriented software development\\gateway project\\gateway project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|solutionrelative:gateway project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|d:\\documents of year 3\\service-oriented software development\\gateway project\\gateway project\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|solutionrelative:gateway project\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 14,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\Database\\Helper\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "Gateway Project\\Database\\Helper\\DatabaseHelper.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\Database\\Helper\\DatabaseHelper.cs",
+              "RelativeToolTip": "Gateway Project\\Database\\Helper\\DatabaseHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T08:36:03.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IDatabaseHelper.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\Database\\Helper\\Interfaces\\IDatabaseHelper.cs",
+              "RelativeDocumentMoniker": "Gateway Project\\Database\\Helper\\Interfaces\\IDatabaseHelper.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\Database\\Helper\\Interfaces\\IDatabaseHelper.cs",
+              "RelativeToolTip": "Gateway Project\\Database\\Helper\\Interfaces\\IDatabaseHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T03:54:53.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppSettings.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\Database\\Helper\\AppSettings.cs",
+              "RelativeDocumentMoniker": "Gateway Project\\Database\\Helper\\AppSettings.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\Database\\Helper\\AppSettings.cs",
+              "RelativeToolTip": "Gateway Project\\Database\\Helper\\AppSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T08:37:26.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CollectionHelper.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\Database\\Helper\\CollectionHelper.cs",
+              "RelativeDocumentMoniker": "Gateway Project\\Database\\Helper\\CollectionHelper.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\Database\\Helper\\CollectionHelper.cs",
+              "RelativeToolTip": "Gateway Project\\Database\\Helper\\CollectionHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T08:37:23.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAccount.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\Database\\Interfaces\\IAccount.cs",
+              "RelativeDocumentMoniker": "Gateway Project\\Database\\Interfaces\\IAccount.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\Database\\Interfaces\\IAccount.cs",
+              "RelativeToolTip": "Gateway Project\\Database\\Interfaces\\IAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T07:58:28.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Account.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\Database\\Account.cs",
+              "RelativeDocumentMoniker": "Gateway Project\\Database\\Account.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\Database\\Account.cs",
+              "RelativeToolTip": "Gateway Project\\Database\\Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T07:52:51.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Gateway Project\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Gateway Project\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-05T02:19:58.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\appsettings.json",
+              "RelativeDocumentMoniker": "Gateway Project\\appsettings.json",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\appsettings.json",
+              "RelativeToolTip": "Gateway Project\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-05T01:51:26.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\Program.cs",
+              "RelativeDocumentMoniker": "Gateway Project\\Program.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\Program.cs",
+              "RelativeToolTip": "Gateway Project\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T01:41:47.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ocelot.json",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\ocelot.json",
+              "RelativeDocumentMoniker": "Gateway Project\\ocelot.json",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\ocelot.json",
+              "RelativeToolTip": "Gateway Project\\ocelot.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-05T01:21:27.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JwtMiddleware.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\JwtMiddleware.cs",
+              "RelativeDocumentMoniker": "Gateway Project\\JwtMiddleware.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\JwtMiddleware.cs",
+              "RelativeToolTip": "Gateway Project\\JwtMiddleware.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwE4AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T01:19:29.558Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

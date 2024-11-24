@@ -1,0 +1,17 @@
+D:\Documents Of Year 3\Service-oriented Software Development\User Project\BLL\obj\Debug\net8.0\BLL.csproj.AssemblyReference.cache
+D:\Documents Of Year 3\Service-oriented Software Development\User Project\BLL\obj\Debug\net8.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents Of Year 3\Service-oriented Software Development\User Project\BLL\obj\Debug\net8.0\BLL.AssemblyInfoInputs.cache
+D:\Documents Of Year 3\Service-oriented Software Development\User Project\BLL\obj\Debug\net8.0\BLL.AssemblyInfo.cs
+D:\Documents Of Year 3\Service-oriented Software Development\User Project\BLL\obj\Debug\net8.0\BLL.csproj.CoreCompileInputs.cache
+D:\Documents Of Year 3\Service-oriented Software Development\User Project\BLL\bin\Debug\net8.0\BLL.deps.json
+D:\Documents Of Year 3\Service-oriented Software Development\User Project\BLL\bin\Debug\net8.0\BLL.dll
+D:\Documents Of Year 3\Service-oriented Software Development\User Project\BLL\bin\Debug\net8.0\BLL.pdb
+D:\Documents Of Year 3\Service-oriented Software Development\User Project\BLL\bin\Debug\net8.0\DAL.dll
+D:\Documents Of Year 3\Service-oriented Software Development\User Project\BLL\bin\Debug\net8.0\Model.dll
+D:\Documents Of Year 3\Service-oriented Software Development\User Project\BLL\bin\Debug\net8.0\DAL.pdb
+D:\Documents Of Year 3\Service-oriented Software Development\User Project\BLL\bin\Debug\net8.0\Model.pdb
+D:\Documents Of Year 3\Service-oriented Software Development\User Project\BLL\obj\Debug\net8.0\BLL.csproj.Up2Date
+D:\Documents Of Year 3\Service-oriented Software Development\User Project\BLL\obj\Debug\net8.0\BLL.dll
+D:\Documents Of Year 3\Service-oriented Software Development\User Project\BLL\obj\Debug\net8.0\refint\BLL.dll
+D:\Documents Of Year 3\Service-oriented Software Development\User Project\BLL\obj\Debug\net8.0\BLL.pdb
+D:\Documents Of Year 3\Service-oriented Software Development\User Project\BLL\obj\Debug\net8.0\ref\BLL.dll
