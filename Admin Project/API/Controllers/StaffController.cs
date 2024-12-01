@@ -160,6 +160,13 @@ namespace API.Controllers
             return staffs;
         }
 
+        [Route("get-data-deleted-pagination")]
+        [HttpGet]
+        public List<StaffModel> GetDataDeletedPagination(int pageNumber, int pageSize)
+        {
+            return _IStaffBLL.GetDataDeletedPagination(pageNumber, pageSize);
+        }
+
         [Authorize(Roles = "Admin, Staff")]
         [Route("search-and-pagination")]
         [HttpGet]

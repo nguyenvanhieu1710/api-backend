@@ -17,10 +17,9 @@ namespace API.Controllers
 
         [Route("create")]
         [HttpPost]
-        public OrdersModel Create(OrdersModel ordersModel)
+        public bool Create(OrdersModel ordersModel)
         {
-            _IOrdersBLL.Create(ordersModel);
-            return ordersModel;
+            return _IOrdersBLL.Create(ordersModel);
         }
 
         [Route("get-data-by-id/{id}")]

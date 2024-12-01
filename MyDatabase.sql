@@ -230,14 +230,6 @@ as
 		where VoucherId = @voucher_Id
 	end;
 go
-create procedure sp_voucher_delete_virtual(@voucher_Id int)
-as
-	begin
-		update Voucher
-		set Deleted = 1
-		where VoucherId = @voucher_Id
-	end
-go
 create procedure sp_voucher_all
 as
 	begin
@@ -264,6 +256,18 @@ as
 		SET @NumberOfIgnoredRecords = (@voucher_pageNumber - 1) * @voucher_pageSize;
 		select * from Voucher 
 		where Deleted = 0
+		ORDER BY VoucherId
+		OFFSET @NumberOfIgnoredRecords ROWS
+		FETCH NEXT @voucher_pageSize ROWS ONLY;
+	end
+go
+create procedure sp_voucher_deleted_pagination (@voucher_pageNumber int, @voucher_pageSize int)
+as
+	begin
+		declare @NumberOfIgnoredRecords int
+		SET @NumberOfIgnoredRecords = (@voucher_pageNumber - 1) * @voucher_pageSize;
+		select * from Voucher 
+		where Deleted = 1
 		ORDER BY VoucherId
 		OFFSET @NumberOfIgnoredRecords ROWS
 		FETCH NEXT @voucher_pageSize ROWS ONLY;
@@ -357,6 +361,18 @@ as
 		FETCH NEXT @category_pageSize ROWS ONLY;
 	end
 go
+create procedure sp_category_deleted_pagination (@category_pageNumber int, @category_pageSize int)
+as
+	begin
+		declare @NumberOfIgnoredRecords int
+		SET @NumberOfIgnoredRecords = (@category_pageNumber - 1) * @category_pageSize;
+		select * from Category 
+		where Deleted = 1
+		ORDER BY CategoryId
+		OFFSET @NumberOfIgnoredRecords ROWS
+		FETCH NEXT @category_pageSize ROWS ONLY;
+	end
+go
 create procedure sp_category_search_pagination (@category_pageNumber int, @category_pageSize int,
 @category_Name nvarchar(100))
 as
@@ -432,6 +448,18 @@ as
 		set @NumberOfRecordsToIgnore = (@product_pageNumber - 1) * @product_pageSize;
 		select * from Product
 		where Deleted = 0
+		order by ProductId
+		offset @NumberOfRecordsToIgnore rows
+		fetch next @product_pageSize rows only;
+	end
+go
+create procedure sp_product_deleted_pagination (@product_pageNumber int, @product_pageSize int)
+as
+	begin
+		declare @NumberOfRecordsToIgnore int
+		set @NumberOfRecordsToIgnore = (@product_pageNumber - 1) * @product_pageSize;
+		select * from Product
+		where Deleted = 1
 		order by ProductId
 		offset @NumberOfRecordsToIgnore rows
 		fetch next @product_pageSize rows only;
@@ -678,6 +706,18 @@ as
 		fetch next @orders_pageSize rows only;
 	end
 go
+create procedure sp_orders_deleted_pagination (@orders_pageNumber int, @orders_pageSize int)
+as
+	begin
+		declare @NumberOfRecordsToIgnore int
+		set @NumberOfRecordsToIgnore = (@orders_pageNumber - 1) * @orders_pageSize;
+		select * from Orders
+		where Deleted = 1
+		order by OrderId
+		offset @NumberOfRecordsToIgnore rows
+		fetch next @orders_pageSize rows only;
+	end
+go
 create procedure sp_orders_search_pagination (@orders_pageNumber int, @orders_pageSize int,
 @userName nvarchar(100))
 as
@@ -776,6 +816,18 @@ as
 		fetch next @users_pageSize rows only;
 	end
 go
+create procedure sp_users_deleted_pagination (@users_pageNumber int, @users_pageSize int)
+as
+	begin
+		declare @NumberOfRecordsToIgnore int
+		set @NumberOfRecordsToIgnore = (@users_pageNumber - 1) * @users_pageSize;
+		select * from Users
+		where Deleted = 1
+		order by UserId
+		offset @NumberOfRecordsToIgnore rows
+		fetch next @users_pageSize rows only;
+	end
+go
 create procedure sp_users_search_pagination (@users_pageNumber int, @users_pageSize int,
 @users_Name nvarchar(100))
 as
@@ -862,6 +914,18 @@ as
 		fetch next @staff_pageSize rows only;
 	end
 go
+create procedure sp_staff_deleted_pagination (@staff_pageNumber int, @staff_pageSize int)
+as
+	begin
+		declare @NumberOfRecordsToIgnore int
+		set @NumberOfRecordsToIgnore = (@staff_pageNumber - 1) * @staff_pageSize;
+		select * from Staff
+		where Deleted = 1
+		order by StaffId
+		offset @NumberOfRecordsToIgnore rows
+		fetch next @staff_pageSize rows only;
+	end
+go
 create procedure sp_staff_search_pagination (@staff_pageNumber int, @staff_pageSize int,
 @staff_Name nvarchar(100))
 as
@@ -938,6 +1002,18 @@ as
 		FETCH NEXT @advertisement_pageSize ROWS ONLY;
 	end
 go
+create procedure sp_advertisement_deleted_pagination (@advertisement_pageNumber int, @advertisement_pageSize int)
+as
+	begin
+		declare @NumberOfIgnoredRecords int
+		SET @NumberOfIgnoredRecords = (@advertisement_pageNumber - 1) * @advertisement_pageSize;
+		select * from Advertisement 
+		where Deleted = 1
+		ORDER BY AdvertisementId
+		OFFSET @NumberOfIgnoredRecords ROWS
+		FETCH NEXT @advertisement_pageSize ROWS ONLY;
+	end
+go
 create procedure sp_advertisement_search_pagination (@advertisement_pageNumber int,
 @advertisement_pageSize int, @advertisement_Name nvarchar(100))
 as
@@ -964,14 +1040,14 @@ as
 go
 create procedure sp_news_update (@news_Id int, @news_Name NVARCHAR(100), 
 @news_Content nvarchar(max), @news_NewsImage nvarchar(max), @news_PostingDate date, 
-@news_PersonPostingId INT)
+@news_PersonPostingId INT, @news_Deleted bit)
 as
 	begin
 		update News
 		set NewsName = @news_Name, Content = @news_Content,
 			NewsImage = @news_NewsImage,
 			PostingDate = @news_PostingDate,
-			PersonPostingId = @news_PersonPostingId
+			PersonPostingId = @news_PersonPostingId, Deleted = @news_Deleted
 		where NewsId = @news_Id
 	end;
 go
@@ -1008,6 +1084,18 @@ as
 		SET @NumberOfIgnoredRecords = (@news_pageNumber - 1) * @news_pageSize;
 		select * from News 
 		where Deleted = 0
+		ORDER BY NewsId
+		OFFSET @NumberOfIgnoredRecords ROWS
+		FETCH NEXT @news_pageSize ROWS ONLY;
+	end
+go
+create procedure sp_news_deleted_pagination (@news_pageNumber int, @news_pageSize int)
+as
+	begin
+		declare @NumberOfIgnoredRecords int
+		SET @NumberOfIgnoredRecords = (@news_pageNumber - 1) * @news_pageSize;
+		select * from News 
+		where Deleted = 1
 		ORDER BY NewsId
 		OFFSET @NumberOfIgnoredRecords ROWS
 		FETCH NEXT @news_pageSize ROWS ONLY;
@@ -1142,6 +1230,18 @@ as
 		SET @NumberOfIgnoredRecords = (@supplier_pageNumber - 1) * @supplier_pageSize;
 		select * from Supplier 
 		where Deleted = 0
+		ORDER BY SupplierId
+		OFFSET @NumberOfIgnoredRecords ROWS
+		FETCH NEXT @supplier_pageSize ROWS ONLY;
+	end
+go
+create procedure sp_supplier_deleted_pagination (@supplier_pageNumber int, @supplier_pageSize int)
+as
+	begin
+		declare @NumberOfIgnoredRecords int
+		SET @NumberOfIgnoredRecords = (@supplier_pageNumber - 1) * @supplier_pageSize;
+		select * from Supplier 
+		where Deleted = 1
 		ORDER BY SupplierId
 		OFFSET @NumberOfIgnoredRecords ROWS
 		FETCH NEXT @supplier_pageSize ROWS ONLY;
@@ -1341,6 +1441,18 @@ as
 		set @NumberOfRecordsToIgnore = (@importBill_pageNumber - 1) * @importBill_pageSize;
 		select * from ImportBill
 		where Deleted = 0
+		order by ImportBillId
+		offset @NumberOfRecordsToIgnore rows
+		fetch next @importBill_pageSize rows only;
+	end
+go
+create procedure sp_importBill_deleted_pagination (@importBill_pageNumber int, @importBill_pageSize int)
+as
+	begin
+		declare @NumberOfRecordsToIgnore int
+		set @NumberOfRecordsToIgnore = (@importBill_pageNumber - 1) * @importBill_pageSize;
+		select * from ImportBill
+		where Deleted = 1
 		order by ImportBillId
 		offset @NumberOfRecordsToIgnore rows
 		fetch next @importBill_pageSize rows only;

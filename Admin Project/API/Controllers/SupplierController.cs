@@ -1,4 +1,5 @@
-﻿using BLL.Interfaces;
+﻿using BLL;
+using BLL.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Model;
@@ -62,6 +63,13 @@ namespace API.Controllers
         public List<SupplierModel> Pagination(int pageNumber, int pageSize)
         {
             return _interfaceSupplierBLL.Pagination(pageNumber, pageSize);
+        }
+
+        [Route("get-data-deleted-pagination")]
+        [HttpGet]
+        public List<SupplierModel> GetDataDeletedPagination(int pageNumber, int pageSize)
+        {
+            return _interfaceSupplierBLL.GetDataDeletedPagination(pageNumber, pageSize);
         }
 
         [Route("search-and-pagination")]

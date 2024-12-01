@@ -15,3 +15,4 @@ D:\Documents Of Year 3\Service-oriented Software Development\Admin Project\BLL\o
 D:\Documents Of Year 3\Service-oriented Software Development\Admin Project\BLL\obj\Debug\net8.0\refint\BLL.dll
 D:\Documents Of Year 3\Service-oriented Software Development\Admin Project\BLL\obj\Debug\net8.0\BLL.pdb
 D:\Documents Of Year 3\Service-oriented Software Development\Admin Project\BLL\obj\Debug\net8.0\ref\BLL.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Admin Project\BLL\obj\Debug\net8.0\BLL.sourcelink.json

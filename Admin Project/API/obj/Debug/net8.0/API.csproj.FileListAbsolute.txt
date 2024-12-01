@@ -52,3 +52,4 @@ D:\Documents Of Year 3\Service-oriented Software Development\Admin Project\API\b
 D:\Documents Of Year 3\Service-oriented Software Development\Admin Project\API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Documents Of Year 3\Service-oriented Software Development\Admin Project\API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 D:\Documents Of Year 3\Service-oriented Software Development\Admin Project\API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Admin Project\API\obj\Debug\net8.0\API.sourcelink.json

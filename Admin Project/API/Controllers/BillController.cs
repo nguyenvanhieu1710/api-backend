@@ -65,6 +65,13 @@ namespace API.Controllers
             return _IOrdersBLL.Pagination(pageNumber, pageSize);
         }
 
+        [Route("get-data-deleted-pagination")]
+        [HttpGet]
+        public List<OrdersModel> GetDataDeletedPagination(int pageNumber, int pageSize)
+        {
+            return _IOrdersBLL.GetDataDeletedPagination(pageNumber, pageSize);
+        }
+
         [Route("search-and-pagination")]
         [HttpGet]
         public List<OrdersModel> SearchAndPagination(int pageNumber, int pageSize, string name)

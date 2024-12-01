@@ -50,6 +50,10 @@ namespace BLL
             return _IVoucherDAL.Pagination(pageNumber, pageSize);
         }
 
+        public List<VoucherModel> GetDataDeletedPagination(int pageNumber, int pageSize)
+        {
+            return _IVoucherDAL.GetDataDeletedPagination(pageNumber, pageSize);
+        }
         public List<VoucherModel> SearchAndPagination(int pageNumber, int pageSize, string name)
         {
             return _IVoucherDAL.SearchAndPagination(pageNumber, pageSize, name);

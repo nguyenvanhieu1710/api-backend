@@ -158,6 +158,25 @@ namespace DAL
             }
         }
 
+        public List<UsersModel> GetDataDeletedPagination(int pageNumber, int pageSize)
+        {
+            string msgError = "";
+            try
+            {
+                var result = _IDatabaseHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_voucher_deleted_pagination",
+                    "@voucher_pageNumber", pageNumber,
+                    "@voucher_pageSize", pageSize);
+                if (result != null && !string.IsNullOrEmpty(msgError))
+                {
+                    throw new Exception(result.ToString());
+                }
+                return result.ConvertTo<UsersModel>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public UsersModel GetDataByUserNameAndPassword(string userName, string password)
         {
             string msgError = "";

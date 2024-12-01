@@ -154,6 +154,26 @@ namespace DAL
             }
         }
 
+        public List<SupplierModel> GetDataDeletedPagination(int pageNumber, int pageSize)
+        {
+            string msgError = "";
+            try
+            {
+                var result = _IDatabaseHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_supplier_deleted_pagination",
+                    "@supplier_pageNumber", pageNumber,
+                    "@supplier_pageSize", pageSize);
+                if (result != null && !string.IsNullOrEmpty(msgError))
+                {
+                    throw new Exception(result.ToString());
+                }
+                return result.ConvertTo<SupplierModel>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public List<SupplierModel> SearchAndPagination(int pageNumber, int pageSize, string name)
         {
             string msgError = "";

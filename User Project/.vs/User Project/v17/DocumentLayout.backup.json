@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\api\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|solutionrelative:api\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|solutionrelative:api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|solutionrelative:api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|solutionrelative:api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3672BDF4-40DA-45DA-9F9B-5E7EAC105BD3}|Model\\Model.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\model\\newsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3672BDF4-40DA-45DA-9F9B-5E7EAC105BD3}|Model\\Model.csproj|solutionrelative:model\\newsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|solutionrelative:api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA0E97A5-B41E-48C2-A782-8B154E9614FA}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\dal\\interfaces\\inewsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0E97A5-B41E-48C2-A782-8B154E9614FA}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\inewsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\api\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|solutionrelative:api\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|solutionrelative:api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\api\\utils\\imagefile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|solutionrelative:api\\utils\\imagefile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98FD8F8B-7D28-4630-B9E6-886FE2DF6DCF}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\bll\\usersbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98FD8F8B-7D28-4630-B9E6-886FE2DF6DCF}|BLL\\BLL.csproj|solutionrelative:bll\\usersbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA0E97A5-B41E-48C2-A782-8B154E9614FA}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\dal\\usersdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0E97A5-B41E-48C2-A782-8B154E9614FA}|DAL\\DAL.csproj|solutionrelative:dal\\usersdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\api\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|solutionrelative:api\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,6 +51,10 @@
       "RelativeMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|solutionrelative:api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\api\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|solutionrelative:api\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\api\\controllers\\advertisementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|solutionrelative:api\\controllers\\advertisementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,12 +63,12 @@
       "RelativeMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|solutionrelative:api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA0E97A5-B41E-48C2-A782-8B154E9614FA}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\dal\\newsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA0E97A5-B41E-48C2-A782-8B154E9614FA}|DAL\\DAL.csproj|solutionrelative:dal\\newsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952AE170-37C7-4FEC-B1CF-1AB1A0CC89F3}|API\\API.csproj|solutionrelative:api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA0E97A5-B41E-48C2-A782-8B154E9614FA}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\dal\\interfaces\\inewsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA0E97A5-B41E-48C2-A782-8B154E9614FA}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\inewsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA0E97A5-B41E-48C2-A782-8B154E9614FA}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\dal\\newsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA0E97A5-B41E-48C2-A782-8B154E9614FA}|DAL\\DAL.csproj|solutionrelative:dal\\newsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{98FD8F8B-7D28-4630-B9E6-886FE2DF6DCF}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\bll\\newsbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,10 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{98FD8F8B-7D28-4630-B9E6-886FE2DF6DCF}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\bll\\interfaces\\inewsbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98FD8F8B-7D28-4630-B9E6-886FE2DF6DCF}|BLL\\BLL.csproj|solutionrelative:bll\\interfaces\\inewsbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3672BDF4-40DA-45DA-9F9B-5E7EAC105BD3}|Model\\Model.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\model\\newsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3672BDF4-40DA-45DA-9F9B-5E7EAC105BD3}|Model\\Model.csproj|solutionrelative:model\\newsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{98FD8F8B-7D28-4630-B9E6-886FE2DF6DCF}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\bll\\ordersbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -107,10 +127,6 @@
       "RelativeMoniker": "D:0:0:{FA0E97A5-B41E-48C2-A782-8B154E9614FA}|DAL\\DAL.csproj|solutionrelative:dal\\messagedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA0E97A5-B41E-48C2-A782-8B154E9614FA}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\dal\\usersdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA0E97A5-B41E-48C2-A782-8B154E9614FA}|DAL\\DAL.csproj|solutionrelative:dal\\usersdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3672BDF4-40DA-45DA-9F9B-5E7EAC105BD3}|Model\\Model.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\model\\orderdetailmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3672BDF4-40DA-45DA-9F9B-5E7EAC105BD3}|Model\\Model.csproj|solutionrelative:model\\orderdetailmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -121,10 +137,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FA0E97A5-B41E-48C2-A782-8B154E9614FA}|DAL\\DAL.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\dal\\helper\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA0E97A5-B41E-48C2-A782-8B154E9614FA}|DAL\\DAL.csproj|solutionrelative:dal\\helper\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98FD8F8B-7D28-4630-B9E6-886FE2DF6DCF}|BLL\\BLL.csproj|d:\\documents of year 3\\service-oriented software development\\user project\\bll\\usersbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98FD8F8B-7D28-4630-B9E6-886FE2DF6DCF}|BLL\\BLL.csproj|solutionrelative:bll\\usersbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -134,7 +146,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 20,
           "Children": [
             {
               "$type": "Bookmark",
@@ -158,19 +170,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
+              "Title": "ImageFile.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\API\\Utils\\ImageFile.cs",
+              "RelativeDocumentMoniker": "API\\Utils\\ImageFile.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\API\\Utils\\ImageFile.cs",
+              "RelativeToolTip": "API\\Utils\\ImageFile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T02:55:34.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\API\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\API\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "API\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T00:58:15.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\API\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\CartController.cs",
+              "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\API\\Controllers\\CartController.cs",
+              "RelativeToolTip": "API\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T00:55:13.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "INewsDAL.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\DAL\\Interfaces\\INewsDAL.cs",
               "RelativeDocumentMoniker": "DAL\\Interfaces\\INewsDAL.cs",
               "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\DAL\\Interfaces\\INewsDAL.cs",
               "RelativeToolTip": "DAL\\Interfaces\\INewsDAL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T12:28:54.436Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "INewsBLL.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\BLL\\Interfaces\\INewsBLL.cs",
               "RelativeDocumentMoniker": "BLL\\Interfaces\\INewsBLL.cs",
@@ -182,44 +230,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "MessageController.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\API\\Controllers\\MessageController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\MessageController.cs",
               "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\API\\Controllers\\MessageController.cs",
               "RelativeToolTip": "API\\Controllers\\MessageController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T12:27:33.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T12:27:33.237Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "CommentController.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\API\\Controllers\\CommentController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\CommentController.cs",
               "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\API\\Controllers\\CommentController.cs",
               "RelativeToolTip": "API\\Controllers\\CommentController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T12:27:25.858Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\API\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\CategoryController.cs",
               "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\API\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "API\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T12:26:54.937Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "AdvertisementController.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\API\\Controllers\\AdvertisementController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\AdvertisementController.cs",
@@ -231,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\API\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\AccountController.cs",
@@ -243,13 +290,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "NewsModel.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\Model\\NewsModel.cs",
               "RelativeDocumentMoniker": "Model\\NewsModel.cs",
               "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\Model\\NewsModel.cs",
               "RelativeToolTip": "Model\\NewsModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-09T03:37:15.912Z"
             },
@@ -261,13 +308,13 @@
               "RelativeDocumentMoniker": "API\\Controllers\\NewsController.cs",
               "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\API\\Controllers\\NewsController.cs",
               "RelativeToolTip": "API\\Controllers\\NewsController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAowBAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAkwDoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-09T03:31:02.052Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "NewsBLL.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\BLL\\NewsBLL.cs",
               "RelativeDocumentMoniker": "BLL\\NewsBLL.cs",
@@ -279,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "OrdersBLL.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\BLL\\OrdersBLL.cs",
               "RelativeDocumentMoniker": "BLL\\OrdersBLL.cs",
@@ -291,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "OrdersModel.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\Model\\OrdersModel.cs",
               "RelativeDocumentMoniker": "Model\\OrdersModel.cs",
@@ -303,19 +350,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\API\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\OrdersController.cs",
               "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\API\\Controllers\\OrdersController.cs",
               "RelativeToolTip": "API\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T02:53:48.481Z"
+              "WhenOpened": "2024-11-09T02:53:48.481Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "StaffModel.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\Model\\StaffModel.cs",
               "RelativeDocumentMoniker": "Model\\StaffModel.cs",
@@ -327,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "OrderDAL.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\DAL\\OrderDAL.cs",
               "RelativeDocumentMoniker": "DAL\\OrderDAL.cs",
@@ -339,7 +387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "ProductDAL.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\DAL\\ProductDAL.cs",
               "RelativeDocumentMoniker": "DAL\\ProductDAL.cs",
@@ -351,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "NewsDAL.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\DAL\\NewsDAL.cs",
               "RelativeDocumentMoniker": "DAL\\NewsDAL.cs",
@@ -363,7 +411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "CommentBLL.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\BLL\\CommentBLL.cs",
               "RelativeDocumentMoniker": "BLL\\CommentBLL.cs",
@@ -375,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "CategoryBLL.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\BLL\\CategoryBLL.cs",
               "RelativeDocumentMoniker": "BLL\\CategoryBLL.cs",
@@ -387,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "CartDAL.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\DAL\\CartDAL.cs",
               "RelativeDocumentMoniker": "DAL\\CartDAL.cs",
@@ -399,7 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "AdvertisementDAL.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\DAL\\AdvertisementDAL.cs",
               "RelativeDocumentMoniker": "DAL\\AdvertisementDAL.cs",
@@ -411,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "AccountDAL.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\DAL\\AccountDAL.cs",
               "RelativeDocumentMoniker": "DAL\\AccountDAL.cs",
@@ -423,7 +471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "CategoryDAL.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\DAL\\CategoryDAL.cs",
               "RelativeDocumentMoniker": "DAL\\CategoryDAL.cs",
@@ -435,7 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "MessageDAL.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\DAL\\MessageDAL.cs",
               "RelativeDocumentMoniker": "DAL\\MessageDAL.cs",
@@ -447,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "OrderDetailModel.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\Model\\OrderDetailModel.cs",
               "RelativeDocumentMoniker": "Model\\OrderDetailModel.cs",
@@ -459,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "CategoryModel.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\Model\\CategoryModel.cs",
               "RelativeDocumentMoniker": "Model\\CategoryModel.cs",
@@ -471,7 +519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "DatabaseHelper.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\DAL\\Helper\\DatabaseHelper.cs",
               "RelativeDocumentMoniker": "DAL\\Helper\\DatabaseHelper.cs",
@@ -483,19 +531,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 7,
               "Title": "UsersBLL.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\BLL\\UsersBLL.cs",
               "RelativeDocumentMoniker": "BLL\\UsersBLL.cs",
               "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\BLL\\UsersBLL.cs",
               "RelativeToolTip": "BLL\\UsersBLL.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAD4vyEAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAD4vyEAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-14T14:51:15.717Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 15,
               "Title": "Startup.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\API\\Startup.cs",
               "RelativeDocumentMoniker": "API\\Startup.cs",
@@ -507,13 +555,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 8,
               "Title": "UsersDAL.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\DAL\\UsersDAL.cs",
               "RelativeDocumentMoniker": "DAL\\UsersDAL.cs",
               "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\DAL\\UsersDAL.cs",
               "RelativeToolTip": "DAL\\UsersDAL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-14T14:46:40.615Z"
             },
@@ -525,7 +573,7 @@
               "RelativeDocumentMoniker": "API\\Controllers\\UsersController.cs",
               "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\User Project\\API\\Controllers\\UsersController.cs",
               "RelativeToolTip": "API\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwK8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-14T14:24:30.051Z",
               "EditorCaption": ""

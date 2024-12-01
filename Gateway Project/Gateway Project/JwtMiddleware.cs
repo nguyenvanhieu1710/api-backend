@@ -41,7 +41,6 @@ namespace Gateway_Project
         {
             var accountName = context.Request.Form["accountName"].ToString();
             var password = context.Request.Form["password"].ToString();
-            //var account = db.AccountModels.SingleOrDefault(x => x.AccountName == accountName && x.Password == password);
             var account = _IAccount.GetDataByAccountNameAndPassword(accountName, password);
             // return null if account not found
             if (account == null)
@@ -51,15 +50,7 @@ namespace Gateway_Project
                 await context.Response.WriteAsync(result);
                 return;
             }
-            //var user = db.UsersModels.Where(u => u.UserId == account.AccountId).FirstOrDefault();
-            // return null if user not found
-            //if (user == null)
-            //{
-            //    context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
-            //    var result = JsonConvert.SerializeObject(new { code = (int)HttpStatusCode.BadRequest, error = "Account Name or Password is incorrect." });
-            //    await context.Response.WriteAsync(result);
-            //    return;
-            //}
+
             // authentication successful so generate jwt token
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
@@ -75,7 +66,7 @@ namespace Gateway_Project
             };
             var tmp = tokenHandler.CreateToken(tokenDescriptor);
             var token = tokenHandler.WriteToken(tmp);
-            var response = new { AccountName = account.AccountName, Role = account.Role, Token = token };
+            var response = new { AccountId = account.AccountId, AccountName = account.AccountName, Role = account.Role, Token = token };
             var serializerSettings = new JsonSerializerSettings
             {
                 Formatting = Formatting.Indented

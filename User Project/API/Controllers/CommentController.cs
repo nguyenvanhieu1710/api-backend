@@ -17,18 +17,16 @@ namespace API.Controllers
 
         [Route("create")]
         [HttpPost]
-        public CommentModel Create(CommentModel commentModel)
+        public bool Create(CommentModel commentModel)
         {
-            _ICommentBLL.Create(commentModel);
-            return commentModel;
+            return _ICommentBLL.Create(commentModel);
         }
 
         [Route("update")]
         [HttpPost]
-        public CommentModel Update(CommentModel commentModel)
+        public bool Update(CommentModel commentModel)
         {
-            _ICommentBLL.Update(commentModel);
-            return commentModel;
+            return _ICommentBLL.Update(commentModel);            
         }
 
         [Route("delete/{id}")]

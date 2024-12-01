@@ -53,7 +53,10 @@ namespace BLL
         {
             return _IStaffDAL.Pagination(pageNumber, pageSize);
         }
-
+        public List<StaffModel> GetDataDeletedPagination(int pageNumber, int pageSize)
+        {
+            return _IStaffDAL.GetDataDeletedPagination(pageNumber, pageSize);
+        }
         public List<StaffModel> Search(string name)
         {
             return _IStaffDAL.Search(name);

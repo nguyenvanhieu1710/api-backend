@@ -1,4 +1,5 @@
-﻿using BLL.Interfaces;
+﻿using BLL;
+using BLL.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Model;
@@ -10,9 +11,11 @@ namespace API.Controllers
     public class AdvertisementController : ControllerBase
     {
         private IAdvertisementBLL _interfaceAdvertisementBLL;
-        public AdvertisementController(IAdvertisementBLL InterfaceAdvertisementBLL)
+        private string _path;
+        public AdvertisementController(IAdvertisementBLL InterfaceAdvertisementBLL, IConfiguration configuration)
         {
             _interfaceAdvertisementBLL = InterfaceAdvertisementBLL;
+            _path = configuration["AppSettings:PATH"];
         }
 
         [Route("create")]
@@ -20,6 +23,51 @@ namespace API.Controllers
         public bool Create(AdvertisementModel advertisementModel)
         {
             return _interfaceAdvertisementBLL.Create(advertisementModel);
+        }
+
+        [Route("upload-image")]
+        [HttpPost, DisableRequestSizeLimit]
+        public async Task<IActionResult> UploadImage(IFormFile file)
+        {
+            try
+            {
+                if (file.Length > 0)
+                {
+                    string filePath = $@"advertisement/{file.FileName}";
+                    var fullPath = CreatePathFile(filePath);
+                    using (var fileStream = new FileStream(fullPath, FileMode.Create))
+                    {
+                        await file.CopyToAsync(fileStream);
+                    }
+                    //return Ok(new { filePath });
+                    return Ok(new { fullPath });
+                }
+                else { return BadRequest(); }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        [NonAction]
+        private string CreatePathFile(string RelativePathFileName)
+        {
+            try
+            {
+                string serverRootPath = _path;
+                string fullPathFile = $@"{serverRootPath}\{RelativePathFileName}";
+                string fullPathFolder = System.IO.Path.GetDirectoryName(fullPathFile);
+                if (!Directory.Exists(fullPathFolder))
+                {
+                    Directory.CreateDirectory(fullPathFolder);
+                }
+                return fullPathFile;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         [Route("update")]
@@ -61,7 +109,24 @@ namespace API.Controllers
         [HttpGet]
         public List<AdvertisementModel> Pagination(int pageNumber, int pageSize)
         {
-            return _interfaceAdvertisementBLL.Pagination(pageNumber, pageSize);
+            List<AdvertisementModel> advertisements = _interfaceAdvertisementBLL.Pagination(pageNumber, pageSize);
+            foreach (var item in advertisements)
+            {
+                if (!string.IsNullOrEmpty(item.AdvertisementImage))
+                {
+                    var filePath = Path.Combine("D:/Documents Of Year 3/Service-oriented Software Development/Admin Project/Image/advertisement", item.AdvertisementImage);
+
+                    item.AdvertisementImage = Utils.ImageFile.ConvertImageToBase64(filePath);
+                }
+            }
+            return advertisements;
+        }
+
+        [Route("get-data-deleted-pagination")]
+        [HttpGet]
+        public List<AdvertisementModel> GetDataDeletedPagination(int pageNumber, int pageSize)
+        {
+            return _interfaceAdvertisementBLL.GetDataDeletedPagination(pageNumber, pageSize);
         }
 
         [Route("search-and-pagination")]

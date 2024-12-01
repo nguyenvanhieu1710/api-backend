@@ -54,6 +54,11 @@ namespace BLL
             return _ICategoryDAL.Pagination(pageNumber, pageSize);
         }
 
+        public List<CategoryModel> GetDataDeletedPagination(int pageNumber, int pageSize)
+        {
+            return _ICategoryDAL.GetDataDeletedPagination(pageNumber, pageSize);
+        }
+
         public List<CategoryModel> SearchAndPagination(int pageNumber, int pageSize, string name)
         {
             return _ICategoryDAL.SearchAndPagination(pageNumber, pageSize, name);

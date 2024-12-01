@@ -64,6 +64,13 @@ namespace API.Controllers
             return _interfaceVoucherBLL.Pagination(pageNumber, pageSize);
         }
 
+        [Route("get-data-deleted-pagination")]
+        [HttpGet]
+        public List<VoucherModel> GetDataDeletedPagination(int pageNumber, int pageSize)
+        {
+            return _interfaceVoucherBLL.GetDataDeletedPagination(pageNumber, pageSize);
+        }
+
         [Route("search-and-pagination")]
         [HttpGet]
         public List<VoucherModel> SearchAndPagination(int pageNumber, int pageSize, string name)

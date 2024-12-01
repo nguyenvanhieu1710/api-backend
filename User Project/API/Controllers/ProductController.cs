@@ -27,7 +27,17 @@ namespace API.Controllers
         [HttpGet]
         public List<ProductModel> GetAll()
         {
-            return _interfaceProductBLL.GetAll();
+            List<ProductModel> products = _interfaceProductBLL.GetAll();
+            foreach (var item in products)
+            {
+                if (!string.IsNullOrEmpty(item.ProductImage))
+                {
+                    var filePath = Path.Combine("D:/Documents Of Year 3/Service-oriented Software Development/Admin Project/Image/product", item.ProductImage);
+
+                    item.ProductImage = Utils.ImageFile.ConvertImageToBase64(filePath);
+                }
+            }
+            return products;
         }
 
         [Route("new-imported-product")]
@@ -41,7 +51,17 @@ namespace API.Controllers
         [HttpGet]
         public List<ProductModel> BestSellingProduct()
         {
-            return _interfaceProductBLL.GetBestSellingProduct();
+            List<ProductModel> products = _interfaceProductBLL.GetBestSellingProduct();
+            foreach (var item in products)
+            {
+                if (!string.IsNullOrEmpty(item.ProductImage))
+                {
+                    var filePath = Path.Combine("D:/Documents Of Year 3/Service-oriented Software Development/Admin Project/Image/product", item.ProductImage);
+
+                    item.ProductImage = Utils.ImageFile.ConvertImageToBase64(filePath);
+                }
+            }
+            return products;
         }
 
         [Route("search/{name}")]
@@ -55,7 +75,17 @@ namespace API.Controllers
         [HttpGet]
         public List<ProductModel> Pagination(int pageNumber, int pageSize)
         {
-            return _interfaceProductBLL.Pagination(pageNumber, pageSize);
+            List<ProductModel> products = _interfaceProductBLL.Pagination(pageNumber, pageSize);
+            foreach (var item in products)
+            {
+                if (!string.IsNullOrEmpty(item.ProductImage))
+                {
+                    var filePath = Path.Combine("D:/Documents Of Year 3/Service-oriented Software Development/Admin Project/Image/product", item.ProductImage);
+
+                    item.ProductImage = Utils.ImageFile.ConvertImageToBase64(filePath);
+                }
+            }
+            return products;
         }
 
         [Route("search-and-pagination")]

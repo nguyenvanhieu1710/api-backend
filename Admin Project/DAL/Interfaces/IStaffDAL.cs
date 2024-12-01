@@ -16,6 +16,7 @@ namespace DAL.Interfaces
         bool Delete(int id);
         List<StaffModel> Search(string name);
         List<StaffModel> Pagination(int pageNumber, int pageSize);
+        List<StaffModel> GetDataDeletedPagination(int pageNumber, int pageSize);
         List<StaffModel> SearchAndPagination(int pageNumber, int pageSize, string name);
     }
 }

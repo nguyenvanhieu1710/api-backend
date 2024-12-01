@@ -1,4 +1,5 @@
 ﻿using BLL.Interfaces;
+using DAL;
 using DAL.Interfaces;
 using Model;
 using System;
@@ -49,7 +50,10 @@ namespace BLL
         {
             return _INewsDAL.Pagination(pageNumber, pageSize);
         }
-
+        public List<NewsModel> GetDataDeletedPagination(int pageNumber, int pageSize)
+        {
+            return _INewsDAL.GetDataDeletedPagination(pageNumber, pageSize);
+        }
         public List<NewsModel> SearchAndPagination(int pageNumber, int pageSize, string name)
         {
             return _INewsDAL.SearchAndPagination(pageNumber, pageSize, name);

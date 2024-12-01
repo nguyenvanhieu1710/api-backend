@@ -16,6 +16,7 @@ namespace BLL.Interfaces
         bool Delete(int id);
         List<NewsModel> Search(string name);
         List<NewsModel> Pagination(int pageNumber, int pageSize);
+        List<NewsModel> GetDataDeletedPagination(int pageNumber, int pageSize);
         List<NewsModel> SearchAndPagination(int pageNumber, int pageSize, string name);
     }
 }

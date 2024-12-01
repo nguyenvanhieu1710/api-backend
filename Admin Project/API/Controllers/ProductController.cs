@@ -1,4 +1,5 @@
-﻿using BLL.Interfaces;
+﻿using BLL;
+using BLL.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Model;
@@ -121,12 +122,19 @@ namespace API.Controllers
             {
                 if (!string.IsNullOrEmpty(item.ProductImage))
                 {
-                    var filePath = Path.Combine("D:/Documents Of Year 3/Service-oriented Software Development/Admin Project/Image/user", item.ProductImage);
+                    var filePath = Path.Combine("D:/Documents Of Year 3/Service-oriented Software Development/Admin Project/Image/product", item.ProductImage);
 
                     item.ProductImage = Utils.ImageFile.ConvertImageToBase64(filePath);
                 }
             }
             return products;
+        }
+
+        [Route("get-data-deleted-pagination")]
+        [HttpGet]
+        public List<ProductModel> GetDataDeletedPagination(int pageNumber, int pageSize)
+        {
+            return _interfaceProductBLL.GetDataDeletedPagination(pageNumber, pageSize);
         }
 
         [Route("search-and-pagination")]

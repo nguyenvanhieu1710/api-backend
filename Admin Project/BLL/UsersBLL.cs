@@ -1,4 +1,5 @@
 ﻿using BLL.Interfaces;
+using DAL;
 using DAL.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -56,6 +57,11 @@ namespace BLL
         public List<UsersModel> Pagination(int pageNumber, int pageSize)
         {
             return _IUsersDAL.Pagination(pageNumber, pageSize);
+        }
+
+        public List<UsersModel> GetDataDeletedPagination(int pageNumber, int pageSize)
+        {
+            return _IUsersDAL.GetDataDeletedPagination(pageNumber, pageSize);
         }
 
         public List<UsersModel> Search(string name)

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|d:\\documents of year 3\\service-oriented software development\\gateway project\\gateway project\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|solutionrelative:gateway project\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|d:\\documents of year 3\\service-oriented software development\\gateway project\\gateway project\\jwtmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|solutionrelative:gateway project\\jwtmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|d:\\documents of year 3\\service-oriented software development\\gateway project\\gateway project\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|solutionrelative:gateway project\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E5C1A49D-431C-4A93-AEAD-BABDD50924FE}|Gateway Project\\Gateway Project.csproj|d:\\documents of year 3\\service-oriented software development\\gateway project\\gateway project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -186,28 +186,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ocelot.json",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\ocelot.json",
               "RelativeDocumentMoniker": "Gateway Project\\ocelot.json",
               "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\ocelot.json",
               "RelativeToolTip": "Gateway Project\\ocelot.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAABcBAAAAAAAAAAAAALQAAACBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-10-05T01:21:27.702Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "JwtMiddleware.cs",
               "DocumentMoniker": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\JwtMiddleware.cs",
               "RelativeDocumentMoniker": "Gateway Project\\JwtMiddleware.cs",
               "ToolTip": "D:\\Documents Of Year 3\\Service-oriented Software Development\\Gateway Project\\Gateway Project\\JwtMiddleware.cs",
               "RelativeToolTip": "Gateway Project\\JwtMiddleware.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAgwE4AAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCkAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T01:19:29.558Z"
+              "WhenOpened": "2024-10-05T01:19:29.558Z",
+              "EditorCaption": ""
             }
           ]
         },

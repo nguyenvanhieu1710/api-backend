@@ -13,3 +13,4 @@ D:\Documents Of Year 3\Service-oriented Software Development\User Project\DAL\ob
 D:\Documents Of Year 3\Service-oriented Software Development\User Project\DAL\obj\Debug\net8.0\refint\DAL.dll
 D:\Documents Of Year 3\Service-oriented Software Development\User Project\DAL\obj\Debug\net8.0\DAL.pdb
 D:\Documents Of Year 3\Service-oriented Software Development\User Project\DAL\obj\Debug\net8.0\ref\DAL.dll
+D:\Documents Of Year 3\Service-oriented Software Development\User Project\DAL\obj\Debug\net8.0\DAL.sourcelink.json

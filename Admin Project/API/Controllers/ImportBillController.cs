@@ -1,4 +1,5 @@
-﻿using BLL.Interfaces;
+﻿using BLL;
+using BLL.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -71,6 +72,13 @@ namespace API.Controllers
         public List<ImportBillModel> Pagination(int pageNumber, int pageSize)
         {
             return _IImportBillBLL.Pagination(pageNumber, pageSize);
+        }
+
+        [Route("get-data-deleted-pagination")]
+        [HttpGet]
+        public List<ImportBillModel> GetDataDeletedPagination(int pageNumber, int pageSize)
+        {
+            return _IImportBillBLL.GetDataDeletedPagination(pageNumber, pageSize);
         }
 
         [Authorize(Roles = "Admin, Staff")]

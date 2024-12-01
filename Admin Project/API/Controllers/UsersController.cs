@@ -190,6 +190,13 @@ namespace API.Controllers
             return users;
         }
 
+        [Route("get-data-deleted-pagination")]
+        [HttpGet]
+        public List<UsersModel> GetDataDeletedPagination(int pageNumber, int pageSize)
+        {
+            return _IUsersBLL.GetDataDeletedPagination(pageNumber, pageSize);
+        }
+
         [Authorize(Roles = "Admin, Staff, User")]
         [Route("search-and-pagination")]
         [HttpGet]

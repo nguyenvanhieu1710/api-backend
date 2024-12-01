@@ -2,6 +2,9 @@ $(document).ready(function () {
   var token = localStorage.getItem("admin");
   var productId = "";
 
+  let currentPage = 1;
+  const pageSize = 5;
+
   var status = 1;
   $(".btn-add-product").click(function () {
     status = 1;
@@ -119,7 +122,7 @@ $(document).ready(function () {
       return;
     }
 
-    productImage = await uploadImage();
+    let productImg = await uploadImage();
 
     var raw_data = {
       productId: 0,
@@ -128,7 +131,7 @@ $(document).ready(function () {
       price: price,
       description: description,
       brand: brand,
-      productImage: productImage,
+      productImage: productImg,
       star: star,
       categoryId: categoryId,
       productDetail: productDetail,
@@ -347,6 +350,41 @@ $(document).ready(function () {
       });
   }
 
+  function searchProduct(name, currentPage, pageSize) {
+    $.ajax({
+      type: "GET",
+      url:
+        "http://localhost:4006/api-admin/product/search-and-pagination?pageNumber=" +
+        currentPage +
+        "&pageSize=" +
+        pageSize +
+        "&name=" +
+        name,
+      headers: {
+        Authorization: "Bearer " + token,
+        "Content-Type": "application/json",
+      },
+      processData: false,
+      contentType: false,
+    })
+      .done(function (data) {
+        updateTable(data);
+      })
+      .fail(function () {
+        console.log("Request failed: ", textStatus, errorThrown);
+      });
+  }
+
+  document
+    .getElementById("searchForm")
+    .addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const searchValue = document.getElementById("searchInput").value;
+
+      searchProduct(searchValue, currentPage, pageSize);
+    });
+
   function updateTable(data) {
     var tbody = $("tbody");
     tbody.empty();
@@ -368,11 +406,6 @@ $(document).ready(function () {
       tbody.append(row);
     });
   }
-
-  let currentPage = 1;
-  const pageSize = 5;
-
-  fetchProducts(currentPage, pageSize);
 
   // Previous button click handler
   $(".btn-previous").on("click", function (e) {
@@ -426,6 +459,8 @@ $(document).ready(function () {
     });
   }
 
+  fetchProducts(currentPage, pageSize);
+
   // Update pagination button states
   function updatePaginationButtons() {
     // if đang ở trang đầu tiên thì ẩn btn previous
@@ -439,11 +474,9 @@ $(document).ready(function () {
     if (currentPage === 3) $(".btn-ThreePage").addClass("active");
   }
 
-  function moveToTrash() {}
-
   function uploadImage() {
     return new Promise((resolve, reject) => {
-      const fileInput = document.getElementById("formFile").files[0];
+      const fileInput = document.getElementById("productImage").files[0];
       const formData = new FormData();
       formData.append("file", fileInput);
 

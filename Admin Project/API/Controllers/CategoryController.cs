@@ -11,9 +11,11 @@ namespace API.Controllers
     public class CategoryController : ControllerBase
     {
         private ICategoryBLL _ICategoryBLL;
-        public CategoryController(ICategoryBLL categoryBLL)
+        private string _path;
+        public CategoryController(ICategoryBLL categoryBLL, IConfiguration configuration)
         {
             _ICategoryBLL = categoryBLL;
+            _path = configuration["AppSettings:PATH"];
         }
 
         [Route("get-data-by-id/{id}")]
@@ -35,6 +37,51 @@ namespace API.Controllers
         public bool Create([FromBody] CategoryModel categoryModel)
         {
             return _ICategoryBLL.Create(categoryModel);
+        }
+
+        [Route("upload-image")]
+        [HttpPost, DisableRequestSizeLimit]
+        public async Task<IActionResult> UploadImage(IFormFile file)
+        {
+            try
+            {
+                if (file.Length > 0)
+                {
+                    string filePath = $@"category/{file.FileName}";
+                    var fullPath = CreatePathFile(filePath);
+                    using (var fileStream = new FileStream(fullPath, FileMode.Create))
+                    {
+                        await file.CopyToAsync(fileStream);
+                    }
+                    //return Ok(new { filePath });
+                    return Ok(new { fullPath });
+                }
+                else { return BadRequest(); }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        [NonAction]
+        private string CreatePathFile(string RelativePathFileName)
+        {
+            try
+            {
+                string serverRootPath = _path;
+                string fullPathFile = $@"{serverRootPath}\{RelativePathFileName}";
+                string fullPathFolder = System.IO.Path.GetDirectoryName(fullPathFile);
+                if (!Directory.Exists(fullPathFolder))
+                {
+                    Directory.CreateDirectory(fullPathFolder);
+                }
+                return fullPathFile;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         [Route("update")]
@@ -62,7 +109,34 @@ namespace API.Controllers
         [HttpGet]
         public List<CategoryModel> Pagination(int pageNumber, int pageSize)
         {
-            return _ICategoryBLL.Pagination(pageNumber, pageSize);
+            List<CategoryModel> categories = _ICategoryBLL.Pagination(pageNumber, pageSize);
+            foreach (var item in categories)
+            {
+                if (!string.IsNullOrEmpty(item.CategoryImage))
+                {
+                    var filePath = Path.Combine("D:/Documents Of Year 3/Service-oriented Software Development/Admin Project/Image/category", item.CategoryImage);
+
+                    item.CategoryImage = Utils.ImageFile.ConvertImageToBase64(filePath);
+                }
+            }
+            return categories;
+        }
+
+        [Route("get-data-deleted-pagination")]
+        [HttpGet]
+        public List<CategoryModel> GetDataDeletedPagination(int pageNumber, int pageSize)
+        {
+            List<CategoryModel> categories = _ICategoryBLL.GetDataDeletedPagination(pageNumber, pageSize);
+            foreach (var item in categories)
+            {
+                if (!string.IsNullOrEmpty(item.CategoryImage))
+                {
+                    var filePath = Path.Combine("D:/Documents Of Year 3/Service-oriented Software Development/Admin Project/Image/category", item.CategoryImage);
+
+                    item.CategoryImage = Utils.ImageFile.ConvertImageToBase64(filePath);
+                }
+            }
+            return categories;
         }
 
         [Route("search-and-pagination")]

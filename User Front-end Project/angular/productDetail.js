@@ -2,6 +2,7 @@ var app = angular.module("MyProject", []);
 
 app.controller("ProductDetailCtrl", function ($scope, $http) {
   $scope.product;
+  $scope.productList;
 
   var url = window.location.href;
   var params = new URLSearchParams(window.location.search); // Lấy phần query string sau dấu ?
@@ -15,7 +16,22 @@ app.controller("ProductDetailCtrl", function ($scope, $http) {
     })
       .then(function (response) {
         $scope.product = response.data;
-        // makeScript("js/main.js");
+        makeScript("js/main.js");
+        // debugger;
+      })
+      .catch(function (error) {
+        console.log("Request failed: " + error.data);
+      });
+  };
+
+  $scope.DisPlayProduct = function () {
+    $http({
+      method: "GET",
+      url: current_url + "/api-user/product/get-all",
+    })
+      .then(function (response) {
+        $scope.productList = response.data;
+        makeScript("js/main.js");
         // debugger;
       })
       .catch(function (error) {
@@ -24,4 +40,5 @@ app.controller("ProductDetailCtrl", function ($scope, $http) {
   };
 
   $scope.loadProduct();
+  $scope.DisPlayProduct();
 });

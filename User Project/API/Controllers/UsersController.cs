@@ -162,7 +162,17 @@ namespace API.Controllers
         [HttpGet]
         public List<UsersModel> Pagination(int pageNumber, int pageSize)
         {
-            return _IUsersBLL.Pagination(pageNumber, pageSize);
+            List<UsersModel> users = _IUsersBLL.Pagination(pageNumber, pageSize);
+            foreach (var user in users)
+            {
+                if (!string.IsNullOrEmpty(user.Image))
+                {
+                    var filePath = Path.Combine("D:/Documents Of Year 3/Service-oriented Software Development/Admin Project/Image/user", user.Image);
+
+                    user.Image = Utils.ImageFile.ConvertImageToBase64(filePath);
+                }
+            }
+            return users;
         }
     }
 }

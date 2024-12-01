@@ -17,6 +17,8 @@ namespace BLL.Interfaces
         bool Delete(int id);
         List<UsersModel> Search(string name);
         List<UsersModel> Pagination(int pageNumber, int pageSize);
+        List<UsersModel> GetDataDeletedPagination(int pageNumber, int pageSize);
+        
         List<UsersModel> SearchAndPagination(int pageNumber, int pageSize, string name);
         (UsersModel, AccountModel) Authenticate(string username, string password);
     }

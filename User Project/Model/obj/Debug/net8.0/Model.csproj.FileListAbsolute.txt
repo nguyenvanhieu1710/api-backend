@@ -9,3 +9,4 @@ D:\Documents Of Year 3\Service-oriented Software Development\User Project\Model\
 D:\Documents Of Year 3\Service-oriented Software Development\User Project\Model\obj\Debug\net8.0\refint\Model.dll
 D:\Documents Of Year 3\Service-oriented Software Development\User Project\Model\obj\Debug\net8.0\Model.pdb
 D:\Documents Of Year 3\Service-oriented Software Development\User Project\Model\obj\Debug\net8.0\ref\Model.dll
+D:\Documents Of Year 3\Service-oriented Software Development\User Project\Model\obj\Debug\net8.0\Model.sourcelink.json

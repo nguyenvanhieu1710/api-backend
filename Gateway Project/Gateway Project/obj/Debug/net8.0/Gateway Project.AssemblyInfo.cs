@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gateway Project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be4ef20466c7207e111dfd7d630335f52818b511")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gateway Project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gateway Project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

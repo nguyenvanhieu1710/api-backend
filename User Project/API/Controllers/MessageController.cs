@@ -17,10 +17,9 @@ namespace API.Controllers
 
         [Route("create")]
         [HttpPost]
-        public MessageModel Create([FromBody] MessageModel messageModel)
+        public bool Create([FromBody] MessageModel messageModel)
         {
-            _interfaceMessageBLL.Create(messageModel);
-            return messageModel;
+            return _interfaceMessageBLL.Create(messageModel);
         }
         
         [Route("delete/{id}")]

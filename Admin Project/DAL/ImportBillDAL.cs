@@ -112,7 +112,25 @@ namespace DAL
                 throw ex;
             }
         }
-
+        public List<ImportBillModel> GetDataDeletedPagination(int pageNumber, int pageSize)
+        {
+            string msgError = "";
+            try
+            {
+                var result = _IDatabaseHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_importBill_deleted_pagination",
+                    "@importBill_pageNumber", pageNumber,
+                    "@importBill_pageSize", pageSize);
+                if (result != null && !string.IsNullOrEmpty(msgError))
+                {
+                    throw new Exception(result.ToString());
+                }
+                return result.ConvertTo<ImportBillModel>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public List<ImportBillModel> Search(string name)
         {
             string msgError = "";

@@ -103,7 +103,8 @@ namespace DAL
                     "@news_Content", newsModel.Content,
                     "@news_NewsImage", newsModel.NewsImage,
                     "@news_PostingDate", newsModel.PostingDate,
-                    "@news_PersonPostingId", newsModel.PersonPostingId);
+                    "@news_PersonPostingId", newsModel.PersonPostingId,
+                    "@news_Deleted", newsModel.Deleted);
                 if (result != null && !string.IsNullOrEmpty(result.ToString()))
                 {
                     throw new Exception(Convert.ToString(result));
@@ -141,6 +142,25 @@ namespace DAL
             try
             {
                 var result = _IDatabaseHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_news_pagination",
+                    "@news_pageNumber", pageNumber,
+                    "@news_pageSize", pageSize);
+                if (result != null && !string.IsNullOrEmpty(msgError))
+                {
+                    throw new Exception(result.ToString());
+                }
+                return result.ConvertTo<NewsModel>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<NewsModel> GetDataDeletedPagination(int pageNumber, int pageSize)
+        {
+            string msgError = "";
+            try
+            {
+                var result = _IDatabaseHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_news_deleted_pagination",
                     "@news_pageNumber", pageNumber,
                     "@news_pageSize", pageSize);
                 if (result != null && !string.IsNullOrEmpty(msgError))

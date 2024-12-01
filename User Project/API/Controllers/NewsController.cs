@@ -17,26 +17,23 @@ namespace API.Controllers
 
         [Route("create")]
         [HttpPost]
-        public NewsModel Create([FromBody] NewsModel newsModel)
+        public bool Create([FromBody] NewsModel newsModel)
         {
-            _interfaceNewsBLL.Create(newsModel);
-            return newsModel;
+            return _interfaceNewsBLL.Create(newsModel);
         }
 
         [Route("update")]
         [HttpPost]
-        public NewsModel Update(NewsModel newsModel)
+        public bool Update(NewsModel newsModel)
         {
-            _interfaceNewsBLL.Update(newsModel);
-            return newsModel;
+            return _interfaceNewsBLL.Update(newsModel);
         }
 
         [Route("delete/{id}")]
         [HttpPost]
-        public void Delete(int id)
+        public bool Delete(int id)
         {
-            _interfaceNewsBLL.Delete(id);
-            return;
+            return _interfaceNewsBLL.Delete(id);
         }
 
         [Route("get-data-by-id/{id}")]
@@ -50,7 +47,17 @@ namespace API.Controllers
         [HttpGet]
         public List<NewsModel> GetAll()
         {
-            return _interfaceNewsBLL.GetAll();
+            List<NewsModel> news = _interfaceNewsBLL.GetAll();
+            foreach (var item in news)
+            {
+                if (!string.IsNullOrEmpty(item.NewsImage))
+                {
+                    var filePath = Path.Combine("D:/Documents Of Year 3/Service-oriented Software Development/Admin Project/Image/news", item.NewsImage);
+
+                    item.NewsImage = Utils.ImageFile.ConvertImageToBase64(filePath);
+                }
+            }
+            return news;
         }
 
         [Route("search/{name}")]

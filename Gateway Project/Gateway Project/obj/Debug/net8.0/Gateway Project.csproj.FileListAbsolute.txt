@@ -52,3 +52,4 @@ D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gat
 D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
 D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Documents Of Year 3\Service-oriented Software Development\Gateway Project\Gateway Project\obj\Debug\net8.0\Gateway Project.sourcelink.json

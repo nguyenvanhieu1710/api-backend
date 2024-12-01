@@ -152,7 +152,25 @@ namespace DAL
                 throw ex;
             }
         }
-
+        public List<AdvertisementModel> GetDataDeletedPagination(int pageNumber, int pageSize)
+        {
+            string msgError = "";
+            try
+            {
+                var result = _IDatabaseHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_advertisement_deleted_pagination",
+                    "@advertisement_pageNumber", pageNumber,
+                    "@advertisement_pageSize", pageSize);
+                if (result != null && !string.IsNullOrEmpty(msgError))
+                {
+                    throw new Exception(result.ToString());
+                }
+                return result.ConvertTo<AdvertisementModel>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public List<AdvertisementModel> SearchAndPagination(int pageNumber, int pageSize, string name)
         {
             string msgError = "";
