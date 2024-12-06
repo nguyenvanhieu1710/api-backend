@@ -103,7 +103,8 @@ namespace DAL
                     "@news_Content", newsModel.Content,
                     "@news_NewsImage", newsModel.NewsImage,
                     "@news_PostingDate", newsModel.PostingDate,
-                    "@news_PersonPostingId", newsModel.PersonPostingId);
+                    "@news_PersonPostingId", newsModel.PersonPostingId,
+                    "@news_Deleted", newsModel.Deleted);
                 if (result != null && !string.IsNullOrEmpty(result.ToString()))
                 {
                     throw new Exception(Convert.ToString(result));

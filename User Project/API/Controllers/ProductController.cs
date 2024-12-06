@@ -68,7 +68,17 @@ namespace API.Controllers
         [HttpGet]
         public List<ProductModel> Search(string name)
         {
-            return _interfaceProductBLL.Search(name);
+            List<ProductModel> products = _interfaceProductBLL.Search(name);
+            foreach (var item in products)
+            {
+                if (!string.IsNullOrEmpty(item.ProductImage))
+                {
+                    var filePath = Path.Combine("D:/Documents Of Year 3/Service-oriented Software Development/Admin Project/Image/product", item.ProductImage);
+
+                    item.ProductImage = Utils.ImageFile.ConvertImageToBase64(filePath);
+                }
+            }
+            return products;
         }
 
         [Route("page={pageNumber}&pageSize={pageSize}")]

@@ -106,7 +106,8 @@ namespace DAL
                     "@users_Image", usersModel.Image,
                     "@users_Gender", usersModel.Gender,
                     "@users_Address", usersModel.Address,
-                    "@users_Ranking", usersModel.Ranking);
+                    "@users_Ranking", usersModel.Ranking,
+                    "@users_Deleted", usersModel.Deleted);
                 if (result != null && !string.IsNullOrEmpty(result.ToString()))
                 {
                     throw new Exception(Convert.ToString(result));
@@ -163,9 +164,9 @@ namespace DAL
             string msgError = "";
             try
             {
-                var result = _IDatabaseHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_voucher_deleted_pagination",
-                    "@voucher_pageNumber", pageNumber,
-                    "@voucher_pageSize", pageSize);
+                var result = _IDatabaseHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_users_deleted_pagination",
+                    "@users_pageNumber", pageNumber,
+                    "@users_pageSize", pageSize);
                 if (result != null && !string.IsNullOrEmpty(msgError))
                 {
                     throw new Exception(result.ToString());

@@ -101,7 +101,8 @@ namespace DAL
                     "@advertisement_Name", advertisementModel.AdvertisementName,
                     "@advertisement_AdvertisementImage", advertisementModel.AdvertisementImage,
                     "@advertisement_Location", advertisementModel.Location,
-                    "@advertisement_AdvertiserId", advertisementModel.AdvertiserId);
+                    "@advertisement_AdvertiserId", advertisementModel.AdvertiserId,
+                    "@advertisement_Deleted", advertisementModel.Deleted);
                 if (result != null && !string.IsNullOrEmpty(result.ToString()))
                 {
                     throw new Exception(Convert.ToString(result));

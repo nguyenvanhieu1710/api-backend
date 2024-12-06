@@ -106,7 +106,8 @@ namespace DAL
                     "@staff_Image", staffModel.Image,
                     "@staff_Gender", staffModel.Gender,
                     "@staff_Address", staffModel.Address,
-                    "@staff_Position", staffModel.Position);
+                    "@staff_Position", staffModel.Position,
+                    "@staff_Deleted", staffModel.Deleted);
                 if (result != null && !string.IsNullOrEmpty(result.ToString()))
                 {
                     throw new Exception(Convert.ToString(result));

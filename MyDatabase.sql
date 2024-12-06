@@ -1,9 +1,10 @@
-﻿-- create database --
+﻿-- ==========================> create database <======================================= --
 CREATE DATABASE MyDatabase;
 go
 USE MyDatabase;
 go
--- create table --
+-- ==========================> create table <======================================= --
+-- ==========================> Account Table <======================================= --
 CREATE TABLE Account (
     AccountId INT IDENTITY(1,1) PRIMARY KEY,
     AccountName NVARCHAR(100) NOT NULL,
@@ -16,6 +17,7 @@ CREATE TABLE Account (
     Deleted BIT DEFAULT 0  not null
 );
 go
+-- ==========================> Users Table <=======================================
 CREATE TABLE Users (
     UserId INT references Account(AccountId),
     UserName NVARCHAR(100) NOT NULL,
@@ -29,6 +31,7 @@ CREATE TABLE Users (
 	primary key(UserId)
 );
 go
+-- ==========================> Staff Table <=======================================
 create table Staff(
 	StaffId int references Account(AccountId),
 	StaffName nvarchar(100) not null,
@@ -42,6 +45,7 @@ create table Staff(
 	primary key(StaffId)
 );
 go
+-- ==========================> Category Table <=======================================
 CREATE TABLE Category (
     CategoryId INT IDENTITY(1,1) PRIMARY KEY,
     CategoryName NVARCHAR(100) NOT NULL,
@@ -64,12 +68,14 @@ CREATE TABLE Product (
     Deleted BIT DEFAULT 0  not null
 );
 go
+-- ==========================> Cart Table <=======================================
 create table Cart(
 	ProductId int references Product(ProductId),
 	UserId int references Users(UserId),
 	primary key(ProductId, UserId)
 );
 go
+-- ==========================> Voucher Table <=======================================
 CREATE TABLE Voucher (
     VoucherId INT IDENTITY(1,1) PRIMARY KEY,
     VoucherName NVARCHAR(100) NOT NULL,
@@ -81,6 +87,7 @@ CREATE TABLE Voucher (
     Deleted BIT DEFAULT 0 not null
 );
 go
+-- ==========================> Orders Table <=======================================
 CREATE TABLE Orders (
     OrderId INT IDENTITY(1,1) PRIMARY KEY,
     UserId INT FOREIGN KEY REFERENCES Users(UserId),
@@ -93,6 +100,7 @@ CREATE TABLE Orders (
     Deleted BIT DEFAULT 0 not null
 );
 go
+-- ==========================> OrderDetail Table <=======================================
 CREATE TABLE OrderDetail (
     OrderDetailId INT IDENTITY(1,1) PRIMARY KEY,
     OrderId INT FOREIGN KEY REFERENCES Orders(OrderId),
@@ -103,6 +111,7 @@ CREATE TABLE OrderDetail (
     VoucherId INT FOREIGN KEY REFERENCES Voucher(VoucherId)
 );
 go
+-- ==========================> Supplier Table <=======================================
 CREATE TABLE Supplier (
     SupplierId INT IDENTITY(1,1) PRIMARY KEY,
     SupplierName NVARCHAR(100) NOT NULL,
@@ -111,6 +120,7 @@ CREATE TABLE Supplier (
     Deleted BIT DEFAULT 0 not null
 );
 go
+-- ==========================> ImportBill Table <=======================================
 CREATE TABLE ImportBill (
     ImportBillId INT IDENTITY(1,1) PRIMARY KEY,
     SupplierId INT FOREIGN KEY REFERENCES Supplier(SupplierId),
@@ -119,6 +129,7 @@ CREATE TABLE ImportBill (
 	Deleted BIT DEFAULT 0 not null
 );
 go
+-- ==========================> ImportBill Table <=======================================
 CREATE TABLE ImportBillDetail (
     ImportBillDetailId INT IDENTITY(1,1) PRIMARY KEY,
     ImportBillId INT FOREIGN KEY REFERENCES ImportBill(ImportBillId),
@@ -127,6 +138,7 @@ CREATE TABLE ImportBillDetail (
     ImportQuantity INT NOT NULL
 );
 go
+-- ==========================> Comment Table <=======================================
 create table Comment(
 	CommentId int identity(1,1) primary key,
 	Content nvarchar(max) not null,
@@ -136,6 +148,7 @@ create table Comment(
 	Deleted BIT DEFAULT 0 not null
 );
 go
+-- ==========================> Message Table <=======================================
 create table Message(
 	MessageId int identity(1,1) primary key,
 	Content nvarchar(max) not null,
@@ -145,6 +158,7 @@ create table Message(
 	Deleted BIT DEFAULT 0 not null
 );
 go
+-- ==========================> News Table <=======================================
 create table News(
 	NewsId int identity(1,1) primary key,
 	NewsName nvarchar(100) not null,
@@ -156,6 +170,7 @@ create table News(
 	Deleted BIT DEFAULT 0 not null
 );
 go
+-- ==========================> Advertisement Table <=======================================
 create table Advertisement(
 	AdvertisementId int identity(1,1) primary key,
 	AdvertisementName nvarchar(100) not null,
@@ -165,7 +180,7 @@ create table Advertisement(
 	Deleted BIT DEFAULT 0 not null
 );
 go
-							-- Stored Procedure --
+-- ==========================> Stored Procedure <=======================================
 -- stored procedures of Account table --
 create procedure sp_account_get_data_by_id (@account_Id int)
 as
@@ -199,7 +214,7 @@ as
 		'image_b.jpg', 'Female', '456 High Street', 'Gold', 0);
 	end;
 go
--- stored procedures of Voucher table --
+-- ==========================> stored procedures of Voucher table <=======================================
 create procedure sp_voucher_create (@voucher_Name NVARCHAR(100), 
 @voucher_Price DECIMAL, @voucher_MinimumPrice DECIMAL, @voucher_Quantity INT,
 @voucher_StartDay DATETime, @voucher_EndDate DATETime)
@@ -292,7 +307,7 @@ BEGIN
     FETCH NEXT @voucher_pageSize ROWS ONLY;
 END;
 go
--- stored procedures of Category table --
+-- ==========================> stored procedures of Category table <=======================================
 create procedure sp_category_create (@category_Name NVARCHAR(100), 
 @category_Image nvarchar(max), @category_DadCategoryId INT)
 as
@@ -386,7 +401,7 @@ as
 		FETCH NEXT @category_pageSize ROWS ONLY;
 	end
 go
--- stored procedures of Product table --
+-- ====================> stored procedures of Product table <=========================== --
 create procedure sp_product_create (@product_Name NVARCHAR(100), 
 @product_Quantity int, @product_Price decimal, @product_Description nvarchar(max),
 @product_Brand nvarchar(50), @product_Image nvarchar(max), @product_Star int,
@@ -403,7 +418,7 @@ go
 create procedure sp_product_update (@product_Id int, @product_Name NVARCHAR(100), 
 @product_Quantity int, @product_Price decimal, @product_Description nvarchar(max),
 @product_Brand nvarchar(50), @product_Image nvarchar(max), @product_Star int,
-@product_ProductDetail NVARCHAR(MAX), @product_CategoryId INT)
+@product_ProductDetail NVARCHAR(MAX), @product_CategoryId INT, @product_Deleted bit)
 as
 	begin
 		update Product
@@ -411,7 +426,8 @@ as
 			Quantity = @product_Quantity, Price = @product_Price,
 			Description = @product_Description, Brand = @product_Brand ,
 			ProductImage = @product_Image , Star = @product_Star ,
-			ProductDetail = @product_ProductDetail , CategoryId = @product_CategoryId 
+			ProductDetail = @product_ProductDetail , CategoryId = @product_CategoryId,
+			Deleted = @product_Deleted
 		where ProductId = @product_Id
 	end;
 go
@@ -493,7 +509,7 @@ as
 			order by Quantity desc) and Deleted = 0
 	end
 go
--- stored procedures of orders table --
+-- ==========================> stored procedures of orders table <================================ --
 create procedure sp_orders_create (@orders_UserId INT, 
 @orders_StaffId INT, @orders_OrderStatus NVARCHAR(50), @orders_DayBuy DATE,
 @orders_DeliveryAddress NVARCHAR(100), @orders_Evaluate int, 
@@ -733,7 +749,7 @@ as
 		fetch next @orders_pageSize rows only;
 	end
 go
--- stored procedures of users table --
+-- ==========================> stored procedures of users table <=======================================
 create procedure sp_users_create (@users_UserName NVARCHAR(100), 
 @users_Birthday DATE, @users_PhoneNumber NVARCHAR(20), @users_Image NVARCHAR(MAX),
 @users_Gender NVARCHAR(10), @users_Address NVARCHAR(100), @users_Ranking nvarchar(20))
@@ -755,14 +771,21 @@ as
 go
 create procedure sp_users_update (@users_Id int, @users_UserName NVARCHAR(100), 
 @users_Birthday DATE, @users_PhoneNumber NVARCHAR(20), @users_Image NVARCHAR(MAX),
-@users_Gender NVARCHAR(10), @users_Address NVARCHAR(100), @users_Ranking nvarchar(20))
+@users_Gender NVARCHAR(10), @users_Address NVARCHAR(100), @users_Ranking nvarchar(20),
+@users_Deleted bit)
 as
 	begin
+		IF @users_Deleted = 1
+		begin
+			update Account
+			set Deleted = @users_Deleted
+			where AccountId = @users_Id
+		end
 		update Users
 		set UserName = @users_UserName, Birthday = @users_Birthday, 
 			PhoneNumber = @users_PhoneNumber, Image = @users_Image, 
 			Gender = @users_Gender, Address = @users_Address, 
-			Ranking = @users_Ranking			
+			Ranking = @users_Ranking, Deleted = @users_Deleted		
 		where UserId = @users_Id
 	end;
 go
@@ -841,7 +864,7 @@ as
 		fetch next @users_pageSize rows only;
 	end
 go
--- stored procedures of staff table --
+-- ==========================> stored procedures of staff table <=======================================
 create procedure sp_staff_create (@staff_StaffName NVARCHAR(100), 
 @staff_Birthday DATE, @staff_PhoneNumber NVARCHAR(20), @staff_Image NVARCHAR(MAX),
 @staff_Gender NVARCHAR(10), @staff_Address NVARCHAR(100), @staff_Position nvarchar(50))
@@ -863,14 +886,21 @@ as
 go
 create procedure sp_staff_update (@staff_Id int, @staff_StaffName NVARCHAR(100), 
 @staff_Birthday DATE, @staff_PhoneNumber NVARCHAR(20), @staff_Image NVARCHAR(MAX),
-@staff_Gender NVARCHAR(10), @staff_Address NVARCHAR(100), @staff_Position nvarchar(50))
+@staff_Gender NVARCHAR(10), @staff_Address NVARCHAR(100), @staff_Position nvarchar(50),
+@staff_Deleted bit)
 as
 	begin
+		IF @staff_Deleted = 1
+		begin
+			update Account
+			set Deleted = @staff_Deleted
+			where AccountId = @staff_Id
+		end
 		update Staff
 		set StaffName = @staff_StaffName, Birthday = @staff_Birthday, 
 			PhoneNumber = @staff_PhoneNumber, Image = @staff_Image, 
 			Gender = @staff_Gender, Address = @staff_Address, 
-			Position = @staff_Position			
+			Position = @staff_Position, Deleted = @staff_Deleted		
 		where StaffId = @staff_Id
 	end;
 go
@@ -939,7 +969,7 @@ as
 		fetch next @staff_pageSize rows only;
 	end
 go
--- stored procedures of advertisement table --
+-- ==========================> stored procedures of advertisement table <=======================================
 create procedure sp_advertisement_create (@advertisement_Name NVARCHAR(100), 
 @advertisement_AdvertisementImage nvarchar(max), @advertisement_Location nvarchar(max), 
 @advertisement_AdvertiserId INT)
@@ -952,14 +982,15 @@ as
 go
 create procedure sp_advertisement_update (@advertisement_Id int, @advertisement_Name NVARCHAR(100), 
 @advertisement_AdvertisementImage nvarchar(max), @advertisement_Location nvarchar(max), 
-@advertisement_AdvertiserId INT)
+@advertisement_AdvertiserId INT, @advertisement_Deleted bit)
 as
 	begin
 		update Advertisement
 		set AdvertisementName = @advertisement_Name, 
 			AdvertisementImage = @advertisement_AdvertisementImage,
 			Location = @advertisement_Location,
-			AdvertiserId = @advertisement_AdvertiserId
+			AdvertiserId = @advertisement_AdvertiserId,
+			Deleted = @advertisement_Deleted
 		where AdvertisementId = @advertisement_Id
 	end;
 go
@@ -1027,7 +1058,7 @@ as
 		FETCH NEXT @advertisement_pageSize ROWS ONLY;
 	end
 go
--- stored procedures of news table --
+-- ==========================> stored procedures of news table <=======================================
 create procedure sp_news_create (@news_Name NVARCHAR(100), @news_Content nvarchar(max), 
 @news_NewsImage nvarchar(max), @news_PostingDate date, 
 @news_PersonPostingId INT)
@@ -1114,7 +1145,7 @@ as
 		FETCH NEXT @news_pageSize ROWS ONLY;
 	end
 go
--- stored procedures of comment table --
+-- ==========================> stored procedures of comment table <=======================================
 create procedure sp_comment_create (@comment_Content nvarchar(max), 
 @comment_Time datetime, @comment_SenderId INT, @comment_ProductId int)
 as
@@ -1154,7 +1185,7 @@ as
 		select * from Comment where CommentId = @comment_Id and Deleted = 0
 	end;
 go
--- stored procedures of cart table --
+-- ==========================> stored procedures of cart table <=======================================
 create procedure sp_cart_create (@cart_ProductId int, @cart_UserId int)
 as
 	begin
@@ -1177,7 +1208,7 @@ as
 		WHERE (LOWER(p.ProductName) LIKE '%' + LOWER(@product_name) + '%')
 	end;
 go
--- stored procedures of supplier table --
+-- ==========================> stored procedures of supplier table <=======================================
 create procedure sp_supplier_create (@supplier_Name NVARCHAR(100), 
 @supplier_PhoneNumber NVARCHAR(20), @supplier_Address NVARCHAR(100))
 as
@@ -1266,7 +1297,7 @@ BEGIN
     FETCH NEXT @supplier_pageSize ROWS ONLY;
 END;
 go
--- stored procedures of message table --
+-- ==========================> stored procedures of message table <=======================================
 create procedure sp_message_create (@message_Content NVARCHAR(max), 
 @message_Time datetime, @message_SenderId INT, @message_ReceiverId INT)
 as
@@ -1295,7 +1326,7 @@ as
 		where (LOWER(Content) like '%' + LOWER(@message_Content) + '%') and Deleted = 0
 	end;
 go
--- stored procedures of importBill table --
+-- ==========================> stored procedures of importBill table <=======================================
 create procedure sp_importBill_create (@importBill_SupplierId INT, 
 @importBill_StaffId INT, @importBill_InputDay DATE,
 @listjson_importBillDetail NVARCHAR(MAX))
@@ -1415,7 +1446,20 @@ go
 create procedure sp_importBill_all
 as
 	begin
-		select * from ImportBill where Deleted = 0
+		SELECT 
+			ib.ImportBillId, 
+			ib.SupplierId, 
+			ib.StaffId, 
+			ib.InputDay, 
+			ib.Deleted,
+			ibd.ImportBillDetailId, 
+			ibd.ProductId, 
+			ibd.ImportPrice, 
+			ibd.ImportQuantity
+		FROM 
+			ImportBill ib LEFT JOIN 
+			ImportBillDetail ibd ON ib.ImportBillId = ibd.ImportBillId
+		WHERE ib.Deleted = 0
 	end;
 go
 create procedure sp_importBill_get_data_by_id (@importBill_Id int)
@@ -1434,30 +1478,57 @@ as
 			and Deleted = 0
 	end;
 go
+-- ==========================> sp_importBill_pagination <=======================================
 create procedure sp_importBill_pagination (@importBill_pageNumber int, @importBill_pageSize int)
 as
 	begin
 		declare @NumberOfRecordsToIgnore int
 		set @NumberOfRecordsToIgnore = (@importBill_pageNumber - 1) * @importBill_pageSize;
-		select * from ImportBill
-		where Deleted = 0
+		SELECT 
+			ib.ImportBillId, 
+			ib.SupplierId, 
+			ib.StaffId, 
+			ib.InputDay, 
+			ib.Deleted,
+			ibd.ImportBillDetailId, 
+			ibd.ProductId, 
+			ibd.ImportPrice, 
+			ibd.ImportQuantity
+		FROM 
+			ImportBill ib LEFT JOIN 
+			ImportBillDetail ibd ON ib.ImportBillId = ibd.ImportBillId
+		WHERE ib.Deleted = 0
 		order by ImportBillId
 		offset @NumberOfRecordsToIgnore rows
 		fetch next @importBill_pageSize rows only;
 	end
 go
+-- ==========================> sp_importBill_deleted_pagination <=======================================
 create procedure sp_importBill_deleted_pagination (@importBill_pageNumber int, @importBill_pageSize int)
 as
 	begin
 		declare @NumberOfRecordsToIgnore int
 		set @NumberOfRecordsToIgnore = (@importBill_pageNumber - 1) * @importBill_pageSize;
-		select * from ImportBill
-		where Deleted = 1
+		SELECT 
+			ib.ImportBillId, 
+			ib.SupplierId, 
+			ib.StaffId, 
+			ib.InputDay, 
+			ib.Deleted,
+			ibd.ImportBillDetailId, 
+			ibd.ProductId, 
+			ibd.ImportPrice, 
+			ibd.ImportQuantity
+		FROM 
+			ImportBill ib LEFT JOIN 
+			ImportBillDetail ibd ON ib.ImportBillId = ibd.ImportBillId
+		WHERE ib.Deleted = 1
 		order by ImportBillId
 		offset @NumberOfRecordsToIgnore rows
 		fetch next @importBill_pageSize rows only;
 	end
 go
+-- ==========================> sp_importBill_search_pagination <=======================================
 CREATE PROCEDURE sp_importBill_search_pagination 
 (
     @product_Name NVARCHAR(100),
@@ -1469,10 +1540,27 @@ BEGIN
     DECLARE @NumberOfIgnoredRecords INT;
     SET @NumberOfIgnoredRecords = (@importBill_pageNumber - 1) * @importBill_pageSize;
 
-    SELECT *
-    FROM Product
-    WHERE (LOWER(ProductName) LIKE '%' + LOWER(@product_Name) + '%') and Deleted = 0
-    ORDER BY ProductId
+    SELECT 
+        ib.ImportBillId, 
+        ib.SupplierId, 
+        ib.StaffId, 
+        ib.InputDay, 
+        ib.Deleted,
+        ibd.ImportBillDetailId, 
+        ibd.ProductId, 
+        ibd.ImportPrice, 
+        ibd.ImportQuantity
+    FROM 
+        ImportBill ib
+    INNER JOIN 
+        ImportBillDetail ibd ON ib.ImportBillId = ibd.ImportBillId
+    INNER JOIN
+        Product p ON ibd.ProductId = p.ProductId
+    WHERE 
+        ib.Deleted = 0
+        AND LOWER(p.ProductName) LIKE '%' + LOWER(@product_Name) + '%'
+    ORDER BY 
+        ib.ImportBillId
     OFFSET @NumberOfIgnoredRecords ROWS
     FETCH NEXT @importBill_pageSize ROWS ONLY;
 END;

@@ -687,6 +687,22 @@
     ]
   },
   {
+    "ContainingType": "API.Controllers.NewsController",
+    "Method": "UploadImage",
+    "RelativePath": "api/News/upload-image",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API.Controllers.OrdersController",
     "Method": "Create",
     "RelativePath": "api/Orders/create",

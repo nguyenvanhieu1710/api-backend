@@ -3,6 +3,7 @@ using DAL.Interfaces;
 using Model;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -62,11 +63,55 @@ namespace DAL
             try
             {
                 var result = _IDatabaseHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_importBill_all");
+
                 if (!string.IsNullOrEmpty(msgError))
                 {
                     throw new Exception(msgError);
                 }
-                return result.ConvertTo<ImportBillModel>().ToList();
+
+                var importBills = new List<ImportBillModel>();
+
+                if (result.Rows.Count > 0)
+                {
+                    var groupedData = result.AsEnumerable()
+                                            .GroupBy(row => row["ImportBillId"]) // Nhóm theo ImportBillId
+                                            .ToList();
+
+                    foreach (var group in groupedData)
+                    {
+                        var importBill = new ImportBillModel
+                        {
+                            ImportBillId = Convert.ToInt32(group.Key),
+                            SupplierId = Convert.ToInt32(group.First()["SupplierId"]),
+                            StaffId = Convert.ToInt32(group.First()["StaffId"]),
+                            InputDay = Convert.ToDateTime(group.First()["InputDay"]),
+                            Deleted = Convert.ToBoolean(group.First()["Deleted"]),
+                            listjson_importBillDetail = new List<ImportBillDetailModel>()
+                        };
+
+                        // Thêm chi tiết hóa đơn vào danh sách chi tiết của hóa đơn
+                        foreach (var row in group)
+                        {
+                            if (row["ImportBillDetailId"] != DBNull.Value)
+                            {
+                                var importBillDetail = new ImportBillDetailModel
+                                {
+                                    ImportBillDetailId = Convert.ToInt32(row["ImportBillDetailId"]),
+                                    ImportBillId = importBill.ImportBillId,
+                                    ProductId = Convert.ToInt32(row["ProductId"]),
+                                    ImportPrice = Convert.ToDecimal(row["ImportPrice"]),
+                                    ImportQuantity = Convert.ToInt32(row["ImportQuantity"])
+                                };
+
+                                importBill.listjson_importBillDetail.Add(importBillDetail);
+                            }
+                        }
+
+                        importBills.Add(importBill);
+                    }
+                }
+
+                return importBills;
             }
             catch (Exception ex)
             {
@@ -101,11 +146,55 @@ namespace DAL
                 var result = _IDatabaseHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_importBill_pagination",
                     "@importBill_pageNumber", pageNumber,
                     "@importBill_pageSize", pageSize);
+
                 if (!string.IsNullOrEmpty(msgError))
                 {
                     throw new Exception(msgError);
                 }
-                return result.ConvertTo<ImportBillModel>().ToList();
+
+                var importBills = new List<ImportBillModel>();
+
+                if (result.Rows.Count > 0)
+                {
+                    var groupedData = result.AsEnumerable()
+                                            .GroupBy(row => row["ImportBillId"]) // Nhóm theo ImportBillId
+                                            .ToList();
+
+                    foreach (var group in groupedData)
+                    {
+                        var importBill = new ImportBillModel
+                        {
+                            ImportBillId = Convert.ToInt32(group.Key),
+                            SupplierId = Convert.ToInt32(group.First()["SupplierId"]),
+                            StaffId = Convert.ToInt32(group.First()["StaffId"]),
+                            InputDay = Convert.ToDateTime(group.First()["InputDay"]),
+                            Deleted = Convert.ToBoolean(group.First()["Deleted"]),
+                            listjson_importBillDetail = new List<ImportBillDetailModel>()
+                        };
+
+                        // Thêm chi tiết hóa đơn vào danh sách chi tiết của hóa đơn
+                        foreach (var row in group)
+                        {
+                            if (row["ImportBillDetailId"] != DBNull.Value)
+                            {
+                                var importBillDetail = new ImportBillDetailModel
+                                {
+                                    ImportBillDetailId = Convert.ToInt32(row["ImportBillDetailId"]),
+                                    ImportBillId = importBill.ImportBillId,
+                                    ProductId = Convert.ToInt32(row["ProductId"]),
+                                    ImportPrice = Convert.ToDecimal(row["ImportPrice"]),
+                                    ImportQuantity = Convert.ToInt32(row["ImportQuantity"])
+                                };
+
+                                importBill.listjson_importBillDetail.Add(importBillDetail);
+                            }
+                        }
+
+                        importBills.Add(importBill);
+                    }
+                }
+
+                return importBills;
             }
             catch (Exception ex)
             {

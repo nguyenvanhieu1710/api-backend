@@ -118,11 +118,16 @@ namespace DAL
             {
                 var result = _IDatabaseHelper.ExecuteSProcedure("sp_product_update",
                     "@product_Id", productModel.ProductId,
-                    "@product_Name", productModel.ProductName, "@product_Quantity", productModel.Quantity,
-                    "@product_Price", productModel.Price, "@product_Description", productModel.Description,
-                    "@product_Brand", productModel.Brand, "@product_Image", productModel.ProductImage,
-                    "@product_Star", productModel.Star, "@product_ProductDetail", productModel.ProductDetail,
-                    "@product_CategoryId", productModel.CategoryId);
+                    "@product_Name", productModel.ProductName, 
+                    "@product_Quantity", productModel.Quantity,
+                    "@product_Price", productModel.Price, 
+                    "@product_Description", productModel.Description,
+                    "@product_Brand", productModel.Brand, 
+                    "@product_Image", productModel.ProductImage,
+                    "@product_Star", productModel.Star, 
+                    "@product_ProductDetail", productModel.ProductDetail,
+                    "@product_CategoryId", productModel.CategoryId,
+                    "@product_Deleted", productModel.Deleted);
                 if (result != null && !string.IsNullOrEmpty(result))
                 {
                     throw new Exception(result.ToString());
