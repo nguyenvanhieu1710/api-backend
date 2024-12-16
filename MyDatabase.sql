@@ -534,60 +534,17 @@ as
 		 	end;
 	end;
 go
-/*
-CREATE PROCEDURE sp_get_order_details_from_json (
-    @listjson_orderDetail NVARCHAR(MAX)
-)
-AS
-BEGIN
-    -- Kiểm tra xem chuỗi JSON có phải là NULL hay không
-    IF (@listjson_orderDetail IS NULL)
-    BEGIN
-        RETURN; -- Trả về nếu chuỗi JSON là NULL
-    END
-
-    -- Trả về dữ liệu từ chuỗi JSON dưới dạng DataTable
-    SELECT 
-        JSON_VALUE(p.value, '$.productId') AS ProductId,
-        JSON_VALUE(p.value, '$.quantity') AS Quantity,
-        JSON_VALUE(p.value, '$.price') AS Price,
-        JSON_VALUE(p.value, '$.discountAmount') AS DiscountAmount,
-        JSON_VALUE(p.value, '$.voucherId') AS VoucherId
-    FROM OPENJSON(@listjson_orderDetail) AS p;
-END;
-go
-DECLARE @json NVARCHAR(MAX);
-
-SET @json = '[
-    {
-        "productId": 1,
-        "quantity": 10,
-        "price": 10,
-        "discountAmount": 10,
-        "voucherId": 1
-    },
-    {
-        "productId": 2,
-        "quantity": 5,
-        "price": 20,
-        "discountAmount": 5,
-        "voucherId": 2
-    }
-]';
-SELECT * FROM OPENJSON(@json);
-EXEC sp_get_order_details_from_json @listjson_orderDetail = @json;
-*/
-go
 create procedure sp_orders_update (@orders_Id int, @orders_UserId INT, 
 @orders_StaffId INT, @orders_OrderStatus NVARCHAR(50), @orders_DayBuy DATE,
-@orders_DeliveryAddress NVARCHAR(100), @orders_Evaluate int, 
+@orders_DeliveryAddress NVARCHAR(100), @orders_Evaluate int, @orders_Deleted bit,
 @listjson_orderDetail NVARCHAR(MAX))
 as
 	begin
 		update Orders
 		set UserId = @orders_UserId, StaffId = @orders_StaffId, 
 			OrderStatus = @orders_OrderStatus, DayBuy = @orders_DayBuy, 
-			DeliveryAddress = @orders_DeliveryAddress, Evaluate = @orders_Evaluate 
+			DeliveryAddress = @orders_DeliveryAddress, Evaluate = @orders_Evaluate, 
+			Deleted = @orders_Deleted
 		where OrderId = @orders_Id
 		if(@listjson_orderDetail is not null)
 			begin
@@ -635,51 +592,6 @@ as
 			end;
 	end;
 go
-/*
-{
-  "orderTableId": 16,
-  "userId": 2,
-  "staffId": 4,
-  "orderStatus": "Shipping",
-  "dayBuy": "2024-10-03T08:32:52.784Z",
-  "deliveryAddress": "HaNoi",
-  "evaluate": 5,
-  "deleted": true,
-  "listjson_orderDetail": [
-    {
-      "orderDetailId": 0,
-      "orderId": 16,
-      "productId": 1,
-      "quantity": 50,
-      "price": 50,
-      "discountAmount": 50,
-      "voucherId": 1,
-      "orderDetailStatus": 1
-    },
-    {
-      "orderDetailId": 15,
-      "orderId": 16,
-      "productId": 1,
-      "quantity": 30,
-      "price": 30,
-      "discountAmount": 30,
-      "voucherId": 1,
-      "orderDetailStatus": 2
-    },
-    {
-      "orderDetailId": 16,
-      "orderId": 16,
-      "productId": 1,
-      "quantity": 10,
-      "price": 10,
-      "discountAmount": 10,
-      "voucherId": 1,
-      "orderDetailStatus": 3
-    }
-  ]
-}
-*/
-go
 create procedure sp_orders_delete (@orders_Id int)
 as
 	begin
@@ -689,47 +601,215 @@ as
 		where OrderId = @orders_Id
 	end;
 go
-create procedure sp_orders_all
-as
-	begin
-		select * from Orders where Deleted = 0
-	end;
+CREATE PROCEDURE sp_orders_all
+AS
+BEGIN
+    SELECT 
+        o.OrderId,
+        o.UserId,
+        o.StaffId,
+        o.OrderStatus,
+        o.DayBuy,
+        o.DeliveryAddress,
+        o.Evaluate,
+        o.Deleted,
+        od.OrderDetailId,
+        od.ProductId,
+        od.Quantity,
+        od.Price,
+        od.DiscountAmount,
+        od.VoucherId
+    FROM 
+        Orders o
+    LEFT JOIN 
+        OrderDetail od ON o.OrderId = od.OrderId
+    WHERE 
+        o.Deleted = 0
+END;
 go
 create procedure sp_orders_get_data_by_id (@orders_Id int)
 as
 	begin
-		select * from Orders where OrderId = @orders_Id and Deleted = 0
+		SELECT 
+        o.OrderId,
+        o.UserId,
+        o.StaffId,
+        o.OrderStatus,
+        o.DayBuy,
+        o.DeliveryAddress,
+        o.Evaluate,
+        o.Deleted,
+        od.OrderDetailId,
+        od.ProductId,
+        od.Quantity,
+        od.Price,
+        od.DiscountAmount,
+        od.VoucherId
+    FROM 
+        Orders o
+    LEFT JOIN 
+        OrderDetail od ON o.OrderId = od.OrderId
+    WHERE o.OrderId = @orders_Id
 	end;
 go
-create procedure sp_orders_search (@userName nvarchar(100))
+create procedure sp_orders_get_data_by_userid_and_pagination (@userId int, 
+@orders_pageNumber int, @orders_pageSize int)
 as
-	begin
-		select * from Orders 
-		where UserId = (
-			select UserId from Users 
-			where (LOWER(UserName) like '%' + LOWER(@userName) + '%')) and Deleted = 0
-	end;
+begin
+    declare @NumberOfRecordsToIgnore int;
+    set @NumberOfRecordsToIgnore = (@orders_pageNumber - 1) * @orders_pageSize;
+
+    SELECT 
+        o.OrderId,
+        o.UserId,
+        o.StaffId,
+        o.OrderStatus,
+        o.DayBuy,
+        o.DeliveryAddress,
+        o.Evaluate,
+        o.Deleted,
+        od.OrderDetailId,
+        od.ProductId,
+        od.Quantity,
+        od.Price,
+        od.DiscountAmount,
+        od.VoucherId
+    FROM 
+        Orders o
+    LEFT JOIN 
+        OrderDetail od ON o.OrderId = od.OrderId
+    WHERE 
+        o.Deleted = 0 and o.UserId = @userId
+    ORDER BY 
+        o.OrderId
+    OFFSET @NumberOfRecordsToIgnore ROWS
+    FETCH NEXT @orders_pageSize ROWS ONLY;
+end;
+go
+create procedure sp_orders_search_user (@userName nvarchar(100))
+as
+begin
+    SELECT 
+        o.OrderId,
+        o.UserId,
+        o.StaffId,
+        o.OrderStatus,
+        o.DayBuy,
+        o.DeliveryAddress,
+        o.Evaluate,
+        o.Deleted,
+        od.OrderDetailId,
+        od.ProductId,
+        od.Quantity,
+        od.Price,
+        od.DiscountAmount,
+        od.VoucherId
+    FROM 
+        Orders o
+    LEFT JOIN 
+        OrderDetail od ON o.OrderId = od.OrderId
+    WHERE 
+        o.UserId in (
+            SELECT UserId 
+            FROM Users 
+            WHERE LOWER(UserName) LIKE '%' + LOWER(@userName) + '%'
+        ) 
+        AND o.Deleted = 0
+end;
+go
+create procedure sp_orders_search_product (@productName nvarchar(100))
+as
+begin
+    SELECT 
+        o.OrderId,
+        o.UserId,
+        o.StaffId,
+        o.OrderStatus,
+        o.DayBuy,
+        o.DeliveryAddress,
+        o.Evaluate,
+        o.Deleted,
+        od.OrderDetailId,
+        od.ProductId,
+        od.Quantity,
+        od.Price,
+        od.DiscountAmount,
+        od.VoucherId
+    FROM 
+        Orders o
+    LEFT JOIN 
+        OrderDetail od ON o.OrderId = od.OrderId
+    WHERE 
+        od.ProductId in (
+            SELECT ProductId 
+            FROM Product 
+            WHERE LOWER(ProductName) LIKE '%' + LOWER(@productName) + '%'
+        ) 
+        AND o.Deleted = 0
+end;
 go
 create procedure sp_orders_pagination (@orders_pageNumber int, @orders_pageSize int)
 as
-	begin
-		declare @NumberOfRecordsToIgnore int
-		set @NumberOfRecordsToIgnore = (@orders_pageNumber - 1) * @orders_pageSize;
-		select * from Orders
-		where Deleted = 0
-		order by OrderId
-		offset @NumberOfRecordsToIgnore rows
-		fetch next @orders_pageSize rows only;
-	end
+begin
+    declare @NumberOfRecordsToIgnore int;
+    set @NumberOfRecordsToIgnore = (@orders_pageNumber - 1) * @orders_pageSize;
+
+    SELECT 
+        o.OrderId,
+        o.UserId,
+        o.StaffId,
+        o.OrderStatus,
+        o.DayBuy,
+        o.DeliveryAddress,
+        o.Evaluate,
+        o.Deleted,
+        od.OrderDetailId,
+        od.ProductId,
+        od.Quantity,
+        od.Price,
+        od.DiscountAmount,
+        od.VoucherId
+    FROM 
+        Orders o
+    LEFT JOIN 
+        OrderDetail od ON o.OrderId = od.OrderId
+    WHERE 
+        o.Deleted = 0
+    ORDER BY 
+        o.OrderId
+    OFFSET @NumberOfRecordsToIgnore ROWS
+    FETCH NEXT @orders_pageSize ROWS ONLY;
+end;
 go
 create procedure sp_orders_deleted_pagination (@orders_pageNumber int, @orders_pageSize int)
 as
 	begin
 		declare @NumberOfRecordsToIgnore int
 		set @NumberOfRecordsToIgnore = (@orders_pageNumber - 1) * @orders_pageSize;
-		select * from Orders
-		where Deleted = 1
-		order by OrderId
+
+		SELECT 
+			o.OrderId,
+			o.UserId,
+			o.StaffId,
+			o.OrderStatus,
+			o.DayBuy,
+			o.DeliveryAddress,
+			o.Evaluate,
+			o.Deleted,
+			od.OrderDetailId,
+			od.ProductId,
+			od.Quantity,
+			od.Price,
+			od.DiscountAmount,
+			od.VoucherId
+		FROM 
+			Orders o
+		LEFT JOIN 
+			OrderDetail od ON o.OrderId = od.OrderId
+		WHERE 
+			o.Deleted = 1
+		ORDER BY 
+			o.OrderId
 		offset @NumberOfRecordsToIgnore rows
 		fetch next @orders_pageSize rows only;
 	end
@@ -740,11 +820,34 @@ as
 	begin
 		declare @NumberOfRecordsToIgnore int
 		set @NumberOfRecordsToIgnore = (@orders_pageNumber - 1) * @orders_pageSize;
-		select * from Orders
-		where UserId = (
-			select UserId from Users 
-			where (LOWER(UserName) like '%' + LOWER(@userName) + '%')) and Deleted = 0
-		order by OrderId
+		SELECT 
+			o.OrderId,
+			o.UserId,
+			o.StaffId,
+			o.OrderStatus,
+			o.DayBuy,
+			o.DeliveryAddress,
+			o.Evaluate,
+			o.Deleted,
+			od.OrderDetailId,
+			od.ProductId,
+			od.Quantity,
+			od.Price,
+			od.DiscountAmount,
+			od.VoucherId
+		FROM 
+			Orders o
+		LEFT JOIN 
+			OrderDetail od ON o.OrderId = od.OrderId
+		WHERE 
+			o.UserId in (
+				SELECT UserId 
+				FROM Users 
+				WHERE LOWER(UserName) LIKE '%' + LOWER(@userName) + '%'
+			) 
+			AND o.Deleted = 0
+		ORDER BY 
+			o.OrderId		
 		offset @NumberOfRecordsToIgnore rows
 		fetch next @orders_pageSize rows only;
 	end
@@ -1347,52 +1450,14 @@ as
 		 	end;
 	end;
 go
-/*
-CREATE PROCEDURE sp_get_importBill_details_from_json (
-    @listjson_importBillDetail NVARCHAR(MAX)
-)
-AS
-BEGIN
-    -- Kiểm tra xem chuỗi JSON có phải là NULL hay không
-    IF (@listjson_importBillDetail IS NULL)
-    BEGIN
-        RETURN; -- Trả về nếu chuỗi JSON là NULL
-    END
-
-    -- Trả về dữ liệu từ chuỗi JSON dưới dạng DataTable
-    SELECT 
-        JSON_VALUE(p.value, '$.productId') AS ProductId,
-		JSON_VALUE(p.value, '$.importPrice') AS ImportPrice,
-		JSON_VALUE(p.value, '$.importQuantity') AS ImportQuantity
-    FROM OPENJSON(@listjson_importBillDetail) AS p;
-END;
-go
-DECLARE @json NVARCHAR(MAX);
-
-SET @json = '[
-    {
-        "productId": 1,
-        "importPrice": 10,
-        "importQuantity": 10
-    },
-    {
-        "productId": 2,
-        "importPrice": 20,
-        "importQuantity": 20
-    }
-]';
-SELECT * FROM OPENJSON(@json);
-EXEC sp_get_importBill_details_from_json @listjson_importBillDetail = @json;
-*/
-go
 create procedure sp_importBill_update (@importBill_Id int, @importBill_SupplierId INT, 
-@importBill_StaffId INT, @importBill_InputDay DATE,
+@importBill_StaffId INT, @importBill_InputDay DATE, @importBill_Deleted bit,
 @listjson_importBillDetail NVARCHAR(MAX))
 as
 	begin
 		update ImportBill
 		set SupplierId = @importBill_SupplierId, StaffId = @importBill_StaffId, 
-			InputDay = @importBill_InputDay
+			InputDay = @importBill_InputDay, Deleted = @importBill_Deleted
 		where ImportBillId = @importBill_Id
 		if(@listjson_importBillDetail is not null)
 			begin
@@ -1438,7 +1503,7 @@ create procedure sp_importBill_delete (@importBill_Id int)
 as
 	begin
 		delete from ImportBillDetail
-		where ImportBillDetailId = @importBill_Id
+		where ImportBillId = @importBill_Id
 		Delete from ImportBill
 		where ImportBillId = @importBill_Id
 	end;
@@ -1465,7 +1530,20 @@ go
 create procedure sp_importBill_get_data_by_id (@importBill_Id int)
 as
 	begin
-		select * from ImportBill where ImportBillId = @importBill_Id and Deleted = 0
+		SELECT 
+			ib.ImportBillId, 
+			ib.SupplierId, 
+			ib.StaffId, 
+			ib.InputDay, 
+			ib.Deleted,
+			ibd.ImportBillDetailId, 
+			ibd.ProductId, 
+			ibd.ImportPrice, 
+			ibd.ImportQuantity
+		FROM 
+			ImportBill ib LEFT JOIN 
+			ImportBillDetail ibd ON ib.ImportBillId = ibd.ImportBillId
+		WHERE ib.ImportBillId = @importBill_Id		
 	end;
 go
 create procedure sp_importBill_search (@supplierName nvarchar(100))

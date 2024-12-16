@@ -446,6 +446,42 @@
   },
   {
     "ContainingType": "API.Controllers.BillController",
+    "Method": "GetDataByUserIdAndPagination",
+    "RelativePath": "api/Bill/get-data-by-userId-and-pagination",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Model.OrdersModel, Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Controllers.BillController",
     "Method": "GetDataDeletedPagination",
     "RelativePath": "api/Bill/get-data-deleted-pagination",
     "HttpMethod": "GET",
@@ -508,24 +544,14 @@
   },
   {
     "ContainingType": "API.Controllers.BillController",
-    "Method": "SearchAndPagination",
-    "RelativePath": "api/Bill/search-and-pagination",
+    "Method": "SearchByProductName",
+    "RelativePath": "api/Bill/search-by-productname",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "pageNumber",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "pageSize",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "name",
+        "Name": "productName",
         "Type": "System.String",
         "IsRequired": false
       }
@@ -545,15 +571,51 @@
   {
     "ContainingType": "API.Controllers.BillController",
     "Method": "Search",
-    "RelativePath": "api/Bill/search/{name}",
+    "RelativePath": "api/Bill/search-by-username",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Model.OrdersModel, Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Controllers.BillController",
+    "Method": "SearchAndPagination",
+    "RelativePath": "api/Bill/search-by-username-and-pagination",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
         "Name": "name",
         "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -1021,7 +1083,7 @@
   {
     "ContainingType": "API.Controllers.ImportBillController",
     "Method": "SearchAndPagination",
-    "RelativePath": "api/ImportBill/search-and-pagination",
+    "RelativePath": "api/ImportBill/search-by-productname-and-pagination",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1426,6 +1488,26 @@
     "ContainingType": "API.Controllers.ProductController",
     "Method": "GetAll",
     "RelativePath": "api/Product/get-all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Model.ProductModel, Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Controllers.ProductController",
+    "Method": "BestSellingProduct",
+    "RelativePath": "api/Product/get-best-selling-product",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

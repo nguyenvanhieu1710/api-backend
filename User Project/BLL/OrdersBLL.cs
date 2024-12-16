@@ -36,6 +36,11 @@ namespace BLL
             return _IOrderDAL.GetDataById(id);
         }
 
+        public List<OrdersModel> GetDataByUserIdAndPagination(int userId, int pageNumber, int pageSize)
+        {
+            return _IOrderDAL.GetDataByUserIdAndPagination(userId, pageNumber, pageSize);
+        }
+
         public List<OrdersModel> Pagination(int pageNumber, int pageSize)
         {
             return _IOrderDAL.Pagination(pageNumber, pageSize);
@@ -44,6 +49,11 @@ namespace BLL
         public List<OrdersModel> Search(string name)
         {
             return _IOrderDAL.Search(name);
+        }
+
+        public List<OrdersModel> SearchByProductName(string productName)
+        {
+            return _IOrderDAL.SearchByProductName(productName);
         }
 
         public bool Update(OrdersModel orderModel)

@@ -82,7 +82,7 @@ namespace API.Controllers
         }
 
         [Authorize(Roles = "Admin, Staff")]
-        [Route("search-and-pagination")]
+        [Route("search-by-productname-and-pagination")]
         [HttpGet]
         public List<ImportBillModel> SearchAndPagination(string name, int pageNumber, int pageSize)
         {

@@ -106,6 +106,24 @@ namespace API.Controllers
             return _interfaceProductBLL.GetAll();
         }
 
+        [Route("get-best-selling-product")]
+        [HttpGet]
+        public List<ProductModel> BestSellingProduct()
+        {
+            return _interfaceProductBLL.GetBestSellingProduct();
+            //List<ProductModel> products = _interfaceProductBLL.GetBestSellingProduct();
+            //foreach (var item in products)
+            //{
+            //    if (!string.IsNullOrEmpty(item.ProductImage))
+            //    {
+            //        var filePath = Path.Combine("D:/Documents Of Year 3/Service-oriented Software Development/Admin Project/Image/product", item.ProductImage);
+
+            //        item.ProductImage = Utils.ImageFile.ConvertImageToBase64(filePath);
+            //    }
+            //}
+            //return products;
+        }
+
         [Route("search/{name}")]
         [HttpGet]
         public List<ProductModel> Search(string name)

@@ -11,6 +11,7 @@ namespace DAL.Interfaces
     {
         ProductModel GetDataById(int id);
         List<ProductModel> GetAll();
+        List<ProductModel> GetBestSellingProduct();
         bool Create(ProductModel productModel);
         bool Update(ProductModel productModel);
         bool Delete(int id);

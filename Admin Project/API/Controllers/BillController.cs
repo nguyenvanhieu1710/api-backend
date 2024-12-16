@@ -44,6 +44,13 @@ namespace API.Controllers
             return _IOrdersBLL.GetDataById(id);
         }
 
+        [Route("get-data-by-userId-and-pagination")]
+        [HttpGet]
+        public List<OrdersModel> GetDataByUserIdAndPagination(int userId, int pageNumber, int pageSize)
+        {
+            return _IOrdersBLL.GetDataByUserIdAndPagination(userId, pageNumber, pageSize);
+        }
+
         [Route("get-all")]
         [HttpGet]
         public List<OrdersModel> GetAll()
@@ -51,11 +58,18 @@ namespace API.Controllers
             return _IOrdersBLL.GetAll();
         }
 
-        [Route("search/{name}")]
+        [Route("search-by-username")]
         [HttpGet]
-        public List<OrdersModel> Search(string name)
+        public List<OrdersModel> Search(string username)
         {
-            return _IOrdersBLL.Search(name);
+            return _IOrdersBLL.Search(username);
+        }
+
+        [Route("search-by-productname")]
+        [HttpGet]
+        public List<OrdersModel> SearchByProductName(string productName)
+        {
+            return _IOrdersBLL.SearchByProductName(productName);
         }
 
         [Route("page={pageNumber}&pageSize={pageSize}")]
@@ -72,7 +86,7 @@ namespace API.Controllers
             return _IOrdersBLL.GetDataDeletedPagination(pageNumber, pageSize);
         }
 
-        [Route("search-and-pagination")]
+        [Route("search-by-username-and-pagination")]
         [HttpGet]
         public List<OrdersModel> SearchAndPagination(int pageNumber, int pageSize, string name)
         {

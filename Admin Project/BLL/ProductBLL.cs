@@ -27,7 +27,10 @@ namespace BLL
         {
             return _IProductDAL.GetAll();
         }
-
+        public List<ProductModel> GetBestSellingProduct()
+        {
+            return _IProductDAL.GetBestSellingProduct();
+        }
         public bool Create(ProductModel voucherModel)
         {
             return _IProductDAL.Create(voucherModel);

@@ -13,7 +13,7 @@ namespace Model
         public int ProductId { get; set; } = 0;
         public int Quantity { get; set; } = 0;
         public decimal Price { get; set; } = 0;
-        public int DiscountAmount { get; set; } = 0;
+        public decimal DiscountAmount { get; set; } = 0;
         public int VoucherId { get; set; } = 0;
         public int OrderDetailStatus { get; set; } = 0;
     }

@@ -73,7 +73,23 @@ namespace DAL
                 throw ex;
             }
         }
-
+        public List<ProductModel> GetBestSellingProduct()
+        {
+            string msgError = "";
+            try
+            {
+                var result = _IDatabaseHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_product_get_best_selling");
+                if (!string.IsNullOrEmpty(msgError))
+                {
+                    throw new Exception(result.ToString());
+                }
+                return result.ConvertTo<ProductModel>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public ProductModel GetDataById(int id)
         {
             string msgError = "";
