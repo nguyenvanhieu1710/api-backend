@@ -200,11 +200,6 @@ create procedure sp_account_create (@account_AccountName NVARCHAR(100),
 @account_Password NVARCHAR(100))
 as
 	begin
-		-- phải thêm 3 số ngẫu nhiên ở cuối để tránh trùng lặp tên tài khoản --
-		--declare @ramdomNumber nvarchar(3)
-		--declare @acccount_Name nvarchar(100)
-		--set @ramdomNumber = cast(cast(rand() * 1000 as int) as nvarchar)
-		--set @acccount_Name = CONCAT(@account_UserName, @ramdomNumber)
 		insert into Account values(@account_AccountName, @account_Password, N'User', GETDATE(), 
 			0, N'defaut@gmail.com', N'Offline', 0)
 		DECLARE @account_Id INT;
@@ -502,11 +497,16 @@ END;
 go
 create procedure sp_product_get_best_selling
 as
-	begin
-		select * from Product
-		where ProductId in (
-			select top(5) ProductId from OrderDetail
-			order by Quantity desc) and Deleted = 0
+	begin		
+		SELECT *
+		FROM Product P
+		WHERE P.ProductId IN (
+			SELECT TOP(5) OD.ProductId
+			FROM OrderDetail OD
+			GROUP BY OD.ProductId
+			ORDER BY SUM(OD.Quantity) DESC
+		)
+		AND P.Deleted = 0;
 	end
 go
 -- ==========================> stored procedures of orders table <================================ --
